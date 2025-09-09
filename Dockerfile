@@ -35,7 +35,7 @@ RUN source ~/.bashrc
 RUN apt-get install git wget -y
 
 WORKDIR /home/Stage
-RUN git clone https://github.com/Junos-Cat/UMI_RTX_Basic_Controller
+RUN git clone https://github.com/Junos-Cat/UMI_RTX_Basic_Controller.git
 WORKDIR /home/Stage/UMI_RTX_Basic_Controller
 RUN mkdir logs
 #RUN ./install_dependencies.sh
