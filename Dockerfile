@@ -36,6 +36,8 @@ RUN ./install_dependencies.sh
 
 RUN mkdir logs
 
+RUN apt install python3-colcon-common-extensions -y
+
 WORKDIR /home/Stage/UMI_RTX_Basic_Controller/ROS_ws
 RUN /bin/bash -c "source /opt/ros/foxy/setup.bash && colcon build --symlink-install"
 
@@ -46,7 +48,6 @@ RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc \
  && echo "source /home/Stage/UMI_RTX_Basic_Controller/ROS_ws/install/setup.bash" >> ~/.bashrc \
  && echo "source /home/Stage/UMI_RTX_Basic_Controller/ros_control_ws/install/setup.bash" >> ~/.bashrc
  
-RUN apt install python3-colcon-common-extensions -y
 RUN echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/foxy/lib:/opt/ros/foxy/opt/rviz_ogre_vendor:/opt/ros/foxy/opt/aml_cpp_vendor' >> ~/.bashrc
 RUN echo 'export PATH=$PATH:/opt/ros/foxy/bin' >> ~/.bashrc
 RUN echo 'export PYTHONPATH=$PYTHONPATH:/opt/ros/foxy/lib/python3.8/site-packages' >> ~/.bashrc
