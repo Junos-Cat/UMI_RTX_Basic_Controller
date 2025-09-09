@@ -38,6 +38,11 @@ RUN mkdir logs
 
 RUN apt install python3-colcon-common-extensions -y
 
+RUN rm -rf /home/Stage/UMI_RTX_Basic_Controller/ros_control_ws/build \
+           /home/Stage/UMI_RTX_Basic_Controller/ros_control_ws/install \
+           /home/Stage/UMI_RTX_Basic_Controller/ros_control_ws/log
+
+
 WORKDIR /home/Stage/UMI_RTX_Basic_Controller/ROS_ws
 RUN /bin/bash -c "source /opt/ros/foxy/setup.bash && colcon build --symlink-install"
 
