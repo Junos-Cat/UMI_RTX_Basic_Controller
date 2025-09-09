@@ -4,6 +4,8 @@ current_dir=$(pwd)
 
 #sudo -i << EOF
 
+trap cleanup SIGINT
+
 # Function to handle cleanup on Ctrl+C
 cleanup() {
   echo "Stopping all ROS nodes..."
