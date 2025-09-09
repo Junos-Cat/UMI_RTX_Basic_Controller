@@ -1,17 +1,17 @@
-# UMI RTX Robotic Arm Contoller
+# UMI RTX Robotic Arm Controller
 
 ## Background
-This is a bare bone keyboard controller for the UMI RTX Robotic Arm (Yumi). It uses the driver provided by [Physar](https://github.com/physar/umi-rtx), and two nodes from [GARDE & MASSA](https://github.com/gardegu/LAB42_RTX_control), namely the nodeArm and nodeInverseKinematics nodes.
+This is a bare-bones keyboard controller for the UMI RTX Robotic Arm (Yumi). It uses the driver provided by [Physar](https://github.com/physar/umi-rtx), and two nodes from [GARDE & MASSA](https://github.com/gardegu/LAB42_RTX_control), namely the nodeArm and nodeInverseKinematics nodes.
 
 I created this repo with modifications to GARDE & MASSA's code as their project requires the use of a Realsense camera and a GPU. The start_arm\_control.sh script runs the driver, the nodes that interact with the driver, and the controller node which interprets the keyboard inputs and publishes the commands to the /target_grip and /target_pose topics.
 
-Please note, this project is not meant to provide a polished controller for the robotic arm. It is meant to allow others to install the minimum packages neccesary to get their robitic arm up and moving. It is provided only so that others (including myself) may build upon it. Hopefully the controllers available will give you a few idea of how you wish to control the arm.
+Please note, this project is not meant to provide a polished controller for the robotic arm. It is meant to allow others to install the minimum packages necessary to get their robotic arm up and moving. It is provided only so that others (including myself) may build upon it. Hopefully the controllers available will give you a few ideas of how you wish to control the arm.
 
 For an example of another method of control, check out [nameguin](https://github.com/nameguin/umi_rtx_demos)'s project.
 
 ## Installation
 
-To use this porject, you will need to use Docker. To learn more about Docker, what it is, and why it's useful, see this [video](https://youtu.be/DQdB7wFEygo).
+To use this project, you will need to use Docker. To learn more about Docker, what it is, and why it's useful, see this [video](https://youtu.be/DQdB7wFEygo).
 
 ### Docker Installation
 
@@ -72,7 +72,7 @@ You may need to run it with elevated permissions as I did:
 sudo docker build -t my-image-name:latest .
 ```
 
-`.` means "build context is the current directory" so if you really want, you can replace this with the location to the aformentioned directory.
+`.` means "build context is the current directory" so if you really want, you can replace this with the location to the aforementioned directory.
 
 This will take a while the first time around but subsequent builds will be shorter.
 
@@ -90,7 +90,7 @@ To run a container from your image, from any directory, run:
 sudo docker run -it my-image-name:latest --name yumi
 ```
 
-When working on your own pachages, you may wish to make your own repository and change the following line in the `Dockerfile` to clone from your repository.
+When working on your own packages, you may wish to make your own repository and change the following line in the `Dockerfile` to clone from your repository.
 `RUN git clone https://github.com/gardegu/LAB42_RTX_control.git`
 Or you may wish to do as I did during development, which was to [mount](https://docs.docker.com/engine/storage/bind-mounts/) your local directory as follows, and then create a repository when you're finished developing.
 ```bash
@@ -116,9 +116,9 @@ When containers are stopped (by entering `exit` in the container terminal), any 
 ```bash
 sudo docker rm yumi
 ```
-Said changes do not transfer to any new containers unless you use volumes or mounts, in which case the data persists independently of the container lifesycle.
+Said changes do not transfer to any new containers unless you use volumes or mounts, in which case the data persists independently of the container lifecycle.
 
-You can restart a container with all of it's local changes by running:
+You can restart a container with all of its local changes by running:
 ```bash
 sudo docker start <container_id>
 ```
@@ -135,7 +135,7 @@ sudo docker exec -it <container_name> /bin/bash
 
 ### Run the Docker container
 
-The Docker container needs access to the USB port the arm is plugge into. To view the USB devices recognised by your computer run:
+The Docker container needs access to the USB port the arm is plugged into. To view the USB devices recognised by your computer run:
 ```bash
 ls /dev/ttyUSB*
 ```
