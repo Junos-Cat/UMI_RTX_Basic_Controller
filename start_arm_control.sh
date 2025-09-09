@@ -85,14 +85,7 @@ else
       read -p "Enter choice [1-3]: " choice
 
       case $choice in
-        1|2)
-          # Start nodeInverseKinematics in background
-          ros2 run ros_interface_umi_rtx nodeInverseKinematics &
-          INV_KIN_PID=$!
-          echo "nodeInverseKinematics started with PID $INV_KIN_PID"
-          ;;
-        3)
-          echo "Running nodeJointControl"
+        1|2|3)
           ;;
         *)
           echo "Invalid choice"
@@ -113,12 +106,21 @@ else
       # Run selected node interactively in foreground to get keyboard input
       case $choice in
         1)
+          # Start nodeInverseKinematics in background
+          ros2 run ros_interface_umi_rtx nodeInverseKinematics &
+          INV_KIN_PID=$!
+          echo "nodeInverseKinematics started with PID $INV_KIN_PID"
           ros2 run keyboard_control nodePositionControl1
           ;;
         2)
+          # Start nodeInverseKinematics in background
+          ros2 run ros_interface_umi_rtx nodeInverseKinematics &
+          INV_KIN_PID=$!
+          echo "nodeInverseKinematics started with PID $INV_KIN_PID"
           ros2 run keyboard_control nodePositionControl2
           ;;
         3)
+          echo "Running nodeJointControl"
           ros2 run keyboard_control nodeJointControl
           ;;
       esac
