@@ -38,7 +38,7 @@ WORKDIR /home/Stage
 RUN git clone https://github.com/Junos-Cat/UMI_RTX_Basic_Controller
 WORKDIR /home/Stage/UMI_RTX_Basic_Controller
 RUN mkdir logs
-RUN ./install_dependencies.sh
+#RUN ./install_dependencies.sh
 
 
 RUN apt install python3-colcon-common-extensions -y
