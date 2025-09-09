@@ -1,4 +1,4 @@
-# UMI RTX Robotic Arm Demos
+# UMI RTX Robotic Arm Contoller
 
 ## Background
 This is a bare bone keyboard controller for the UMI RTX Robotic Arm (Yumi). It uses the driver provided by [Physar](https://github.com/physar/umi-rtx), and two nodes from [GARDE & MASSA](https://github.com/gardegu/LAB42_RTX_control), namely the nodeArm and nodeInverseKinematics nodes.
