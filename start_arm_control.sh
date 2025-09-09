@@ -7,16 +7,21 @@ current_dir=$(pwd)
 trap cleanup SIGINT
 
 # Setup ROS log dir
-export ROS_LOG_DIR=$current_dir/.ros/log
+#export ROS_LOG_DIR=$current_dir/.ros/log
+#mkdir -p $ROS_LOG_DIR
+
+export HOME=$current_dir
+export ROS_LOG_DIR=$HOME/.ros/log
 mkdir -p $ROS_LOG_DIR
+
 
 # Function to handle cleanup on Ctrl+C
 cleanup() {
   echo "Stopping all ROS nodes..."
   # Kill background processes
   pkill -P $$
-  [ -n "$INV_KIN_PID" ] && kill -9 $INV_KIN_PID
-  [ -n "$NODE_ARM_PID" ] && kill -9 $NODE_ARM_PID
+  [ -n "$INV_KIN_PID" ] && kill -9 $INV_KIN_PID 2>/dev/null || true
+  [ -n "$NODE_ARM_PID" ] && kill -9 $NODE_ARM_PID 2>/dev/null || true
   # Stop ROS2 daemon (optional)
   ros2 daemon stop
   echo "All nodes stopped."
