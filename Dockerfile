@@ -37,9 +37,9 @@ RUN apt-get install git wget -y
 WORKDIR /home/Stage
 RUN git clone https://github.com/Junos-Cat/UMI_RTX_Basic_Controller
 WORKDIR /home/Stage/UMI_RTX_Basic_Controller
-
-RUN ./UMI_RTX_Basic_Controller/install_dependencies.sh
 RUN mkdir logs
+RUN ./UMI_RTX_Basic_Controller/install_dependencies.sh
+
 
 RUN apt install python3-colcon-common-extensions -y
 RUN echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/foxy/lib:/opt/ros/foxy/opt/rviz_ogre_vendor:/opt/ros/foxy/opt/aml_cpp_vendor' >> ~/.bashrc
