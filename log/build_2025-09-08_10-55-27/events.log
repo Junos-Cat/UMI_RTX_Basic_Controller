@@ -1,0 +1,219 @@
+[0.000000] (-) TimerEvent: {}
+[0.000708] (-) JobUnselected: {'identifier': 'keyboard_control'}
+[0.000811] (-) JobUnselected: {'identifier': 'yumi_manual_control'}
+[0.000858] (ros_interface_umi_rtx) JobQueued: {'identifier': 'ros_interface_umi_rtx', 'dependencies': OrderedDict()}
+[0.000882] (ros_interface_umi_rtx) JobStarted: {'identifier': 'ros_interface_umi_rtx'}
+[0.009696] (ros_interface_umi_rtx) JobProgress: {'identifier': 'ros_interface_umi_rtx', 'progress': 'cmake'}
+[0.010698] (ros_interface_umi_rtx) JobProgress: {'identifier': 'ros_interface_umi_rtx', 'progress': 'build'}
+[0.011604] (ros_interface_umi_rtx) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/Stage/LAB42_RTX_control/build/ros_interface_umi_rtx', '--', '-j8', '-l8'], 'cwd': '/home/Stage/LAB42_RTX_control/build/ros_interface_umi_rtx', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('USER', 'root'), ('HOSTNAME', 'b8632f16cc7c'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/ros/foxy/lib:/opt/ros/foxy/opt/rviz_ogre_vendor:/opt/ros/foxy/opt/aml_cpp_vendor'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('CUDA_VERSION', '11.4.2'), ('ROS_DISTRO', 'foxy'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=460,driver<461'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility,graphics,compat32,utility,compute,video,utility,graphics'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ros/foxy/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/home/Stage/LAB42_RTX_control/build/ros_interface_umi_rtx'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[0.080059] (ros_interface_umi_rtx) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target GUI\x1b[0m\n'}
+[0.081494] (ros_interface_umi_rtx) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target nodeInverseKinematics\x1b[0m\n'}
+[0.085539] (ros_interface_umi_rtx) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target nodeSimu\x1b[0m\n'}
+[0.086168] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 10%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target armraw\x1b[0m\n'}
+[0.087131] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target armerror\x1b[0m\n'}
+[0.087291] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target armcmds\x1b[0m\n'}
+[0.099850] (-) TimerEvent: {}
+[0.106409] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 15%] Built target armraw_autogen\n'}
+[0.106714] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 15%] Built target nodeInverseKinematics_autogen\n'}
+[0.108290] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 15%] Built target GUI_autogen\n'}
+[0.112026] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 15%] Built target nodeSimu_autogen\n'}
+[0.114796] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 15%] Built target armerror_autogen\n'}
+[0.116411] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 15%] Built target armcmds_autogen\n'}
+[0.138824] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 23%] Built target armraw\n'}
+[0.143234] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 31%] Built target armerror\n'}
+[0.149524] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 39%] Built target armcmds\n'}
+[0.157754] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 47%] Built target nodeSimu\n'}
+[0.164912] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 55%] Built target nodeInverseKinematics\n'}
+[0.173467] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 57%] \x1b[34m\x1b[1mAutomatic MOC and UIC for target nodeArm\x1b[0m\n'}
+[0.176482] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 68%] Built target GUI\n'}
+[0.193586] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 68%] Built target nodeArm_autogen\n'}
+[0.199928] (-) TimerEvent: {}
+[0.208467] (ros_interface_umi_rtx) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target nodeArm\x1b[0m\n'}
+[0.243280] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/nodeArm.dir/src/node_arm.cpp.o\x1b[0m\n'}
+[0.300070] (-) TimerEvent: {}
+[0.400405] (-) TimerEvent: {}
+[0.500728] (-) TimerEvent: {}
+[0.601029] (-) TimerEvent: {}
+[0.701379] (-) TimerEvent: {}
+[0.801673] (-) TimerEvent: {}
+[0.901969] (-) TimerEvent: {}
+[1.002310] (-) TimerEvent: {}
+[1.102608] (-) TimerEvent: {}
+[1.202915] (-) TimerEvent: {}
+[1.303249] (-) TimerEvent: {}
+[1.403559] (-) TimerEvent: {}
+[1.503865] (-) TimerEvent: {}
+[1.604159] (-) TimerEvent: {}
+[1.704463] (-) TimerEvent: {}
+[1.804761] (-) TimerEvent: {}
+[1.905082] (-) TimerEvent: {}
+[2.005391] (-) TimerEvent: {}
+[2.105718] (-) TimerEvent: {}
+[2.206094] (-) TimerEvent: {}
+[2.306417] (-) TimerEvent: {}
+[2.406717] (-) TimerEvent: {}
+[2.507027] (-) TimerEvent: {}
+[2.607332] (-) TimerEvent: {}
+[2.707642] (-) TimerEvent: {}
+[2.807944] (-) TimerEvent: {}
+[2.908290] (-) TimerEvent: {}
+[3.008605] (-) TimerEvent: {}
+[3.108919] (-) TimerEvent: {}
+[3.209251] (-) TimerEvent: {}
+[3.309569] (-) TimerEvent: {}
+[3.409870] (-) TimerEvent: {}
+[3.510204] (-) TimerEvent: {}
+[3.610509] (-) TimerEvent: {}
+[3.710828] (-) TimerEvent: {}
+[3.811145] (-) TimerEvent: {}
+[3.911460] (-) TimerEvent: {}
+[4.011793] (-) TimerEvent: {}
+[4.112115] (-) TimerEvent: {}
+[4.212422] (-) TimerEvent: {}
+[4.312746] (-) TimerEvent: {}
+[4.413082] (-) TimerEvent: {}
+[4.513385] (-) TimerEvent: {}
+[4.613678] (-) TimerEvent: {}
+[4.713988] (-) TimerEvent: {}
+[4.814344] (-) TimerEvent: {}
+[4.914679] (-) TimerEvent: {}
+[5.015017] (-) TimerEvent: {}
+[5.115378] (-) TimerEvent: {}
+[5.215695] (-) TimerEvent: {}
+[5.316007] (-) TimerEvent: {}
+[5.416328] (-) TimerEvent: {}
+[5.516620] (-) TimerEvent: {}
+[5.616922] (-) TimerEvent: {}
+[5.717223] (-) TimerEvent: {}
+[5.817508] (-) TimerEvent: {}
+[5.917810] (-) TimerEvent: {}
+[6.018108] (-) TimerEvent: {}
+[6.118399] (-) TimerEvent: {}
+[6.218693] (-) TimerEvent: {}
+[6.318989] (-) TimerEvent: {}
+[6.419310] (-) TimerEvent: {}
+[6.519604] (-) TimerEvent: {}
+[6.619892] (-) TimerEvent: {}
+[6.720194] (-) TimerEvent: {}
+[6.820486] (-) TimerEvent: {}
+[6.920781] (-) TimerEvent: {}
+[7.021094] (-) TimerEvent: {}
+[7.121468] (-) TimerEvent: {}
+[7.221967] (-) TimerEvent: {}
+[7.322680] (-) TimerEvent: {}
+[7.423020] (-) TimerEvent: {}
+[7.523358] (-) TimerEvent: {}
+[7.623692] (-) TimerEvent: {}
+[7.724078] (-) TimerEvent: {}
+[7.824420] (-) TimerEvent: {}
+[7.826664] (ros_interface_umi_rtx) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX executable nodeArm\x1b[0m\n'}
+[7.924538] (-) TimerEvent: {}
+[8.024869] (-) TimerEvent: {}
+[8.125243] (-) TimerEvent: {}
+[8.211484] (ros_interface_umi_rtx) StdoutLine: {'line': b'[100%] Built target nodeArm\n'}
+[8.224321] (ros_interface_umi_rtx) CommandEnded: {'returncode': 0}
+[8.226669] (ros_interface_umi_rtx) JobProgress: {'identifier': 'ros_interface_umi_rtx', 'progress': 'install'}
+[8.226841] (-) TimerEvent: {}
+[8.239418] (ros_interface_umi_rtx) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/Stage/LAB42_RTX_control/build/ros_interface_umi_rtx'], 'cwd': '/home/Stage/LAB42_RTX_control/build/ros_interface_umi_rtx', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('USER', 'root'), ('HOSTNAME', 'b8632f16cc7c'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/ros/foxy/lib:/opt/ros/foxy/opt/rviz_ogre_vendor:/opt/ros/foxy/opt/aml_cpp_vendor'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('CUDA_VERSION', '11.4.2'), ('ROS_DISTRO', 'foxy'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=460,driver<461'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility,graphics,compat32,utility,compute,video,utility,graphics'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ros/foxy/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/home/Stage/LAB42_RTX_control/build/ros_interface_umi_rtx'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/opt/ros/foxy')]), 'shell': False}
+[8.249159] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.249453] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/nodeArm\n'}
+[8.252703] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Set runtime path of "/home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/nodeArm" to ""\n'}
+[8.252977] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/nodeInverseKinematics\n'}
+[8.253532] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/nodeSimu\n'}
+[8.253983] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/GUI\n'}
+[8.254297] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include\n'}
+[8.254523] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx\n'}
+[8.254892] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics\n'}
+[8.255048] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/_template.h\n'}
+[8.255216] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/matrix.h\n'}
+[8.255286] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/chesscmds.h\n'}
+[8.255352] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/path.h\n'}
+[8.255416] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/armlib.h\n'}
+[8.255479] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/inverse.h\n'}
+[8.255541] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/umiinit.h\n'}
+[8.255618] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/config.h\n'}
+[8.255679] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/xml_parser.h\n'}
+[8.255834] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/chess.h\n'}
+[8.255892] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/spp.h\n'}
+[8.255953] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/umi.h\n'}
+[8.256013] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/interface.h\n'}
+[8.256141] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/arm.h\n'}
+[8.256204] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/pathplan.h\n'}
+[8.256292] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/basics.h\n'}
+[8.256414] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/simulator.h\n'}
+[8.256480] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_invkin.hpp\n'}
+[8.256541] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/rapidxml.hpp\n'}
+[8.256599] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/mainpage.h\n'}
+[8.256657] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts\n'}
+[8.256714] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts/wrist.h\n'}
+[8.256815] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts/forearm.h\n'}
+[8.256876] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts/arm.h\n'}
+[8.256956] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts/joint.h\n'}
+[8.257016] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_simu.hpp\n'}
+[8.257126] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_arm.hpp\n'}
+[8.257200] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers\n'}
+[8.257258] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/armraw.h\n'}
+[8.257316] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/rtx.h\n'}
+[8.257370] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/rtxd.h\n'}
+[8.257423] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/armlib.h\n'}
+[8.257476] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/duart.h\n'}
+[8.257533] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/ipc.h\n'}
+[8.257618] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/comm.h\n'}
+[8.257679] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/680x0.h\n'}
+[8.257734] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/rtxcmds.h\n'}
+[8.257787] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/ipcrt.h\n'}
+[8.257862] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/hostlib.h\n'}
+[8.257914] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/m68kipc\n'}
+[8.257963] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/m68kipc/a.out.h\n'}
+[8.258011] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/m68kipc/exec.h\n'}
+[8.258066] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/bsd\n'}
+[8.258128] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/bsd/sys\n'}
+[8.258177] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/bsd/sys/ioccom.h\n'}
+[8.258226] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/bsd/sys/filio.h\n'}
+[8.258275] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/main_gui.hpp\n'}
+[8.258323] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_camera.hpp\n'}
+[8.258378] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_camera_API.hpp\n'}
+[8.258427] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_commands.hpp\n'}
+[8.258475] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/launch\n'}
+[8.258524] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/launch/simu.launch.py\n'}
+[8.258573] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/launch/arm.launch.py\n'}
+[8.258621] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/rviz\n'}
+[8.258670] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/rviz/rviz_basic_settings.rviz\n'}
+[8.258718] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/urdf\n'}
+[8.258767] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/urdf/umi_rtx.urdf\n'}
+[8.258814] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/images\n'}
+[8.258862] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/images/icon.png\n'}
+[8.258910] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages\n'}
+[8.258958] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image02.jpg\n'}
+[8.259006] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage03.png\n'}
+[8.259106] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage05.png\n'}
+[8.259180] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage01.png\n'}
+[8.259308] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage04.png\n'}
+[8.259637] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage05.png\n'}
+[8.259771] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage02.png\n'}
+[8.259879] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage02.png\n'}
+[8.259965] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image01.jpg\n'}
+[8.260030] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image05.jpg\n'}
+[8.260375] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image04.jpg\n'}
+[8.260719] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage04.png\n'}
+[8.260799] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image03.jpg\n'}
+[8.260858] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage03.png\n'}
+[8.260914] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage01.png\n'}
+[8.260968] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ament_index/resource_index/package_run_dependencies/ros_interface_umi_rtx\n'}
+[8.261024] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ament_index/resource_index/parent_prefix_path/ros_interface_umi_rtx\n'}
+[8.261427] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/environment/ament_prefix_path.sh\n'}
+[8.261514] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/environment/ament_prefix_path.dsv\n'}
+[8.261691] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/environment/path.sh\n'}
+[8.261755] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/environment/path.dsv\n'}
+[8.261816] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/local_setup.bash\n'}
+[8.261875] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/local_setup.sh\n'}
+[8.261935] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/local_setup.zsh\n'}
+[8.261995] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/local_setup.dsv\n'}
+[8.262065] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/package.dsv\n'}
+[8.262248] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ament_index/resource_index/packages/ros_interface_umi_rtx\n'}
+[8.262313] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/cmake/ros_interface_umi_rtxConfig.cmake\n'}
+[8.262374] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/cmake/ros_interface_umi_rtxConfig-version.cmake\n'}
+[8.262434] (ros_interface_umi_rtx) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/package.xml\n'}
+[8.262496] (ros_interface_umi_rtx) CommandEnded: {'returncode': 0}
+[8.280967] (ros_interface_umi_rtx) JobEnded: {'identifier': 'ros_interface_umi_rtx', 'rc': 0}
+[8.281973] (-) EventReactorShutdown: {}

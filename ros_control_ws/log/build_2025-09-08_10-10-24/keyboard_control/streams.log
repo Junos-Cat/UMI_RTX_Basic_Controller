@@ -1,0 +1,26 @@
+[0.013s] Invoking command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8
+[0.061s] [35m[1mScanning dependencies of target nodeGripTester[0m
+[0.087s] [ 50%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m
+[3.281s] [100%] [32m[1mLinking CXX executable nodeGripTester[0m
+[3.455s] [100%] Built target nodeGripTester
+[3.470s] Invoked command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8
+[3.486s] Invoking command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control
+[3.497s] -- Install configuration: ""
+[3.497s] -- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/lib/keyboard_control/nodeGripTester
+[3.499s] -- Set runtime path of "/home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/lib/keyboard_control/nodeGripTester" to ""
+[3.499s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/ament_index/resource_index/package_run_dependencies/keyboard_control
+[3.499s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/ament_index/resource_index/parent_prefix_path/keyboard_control
+[3.499s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.sh
+[3.499s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.dsv
+[3.499s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/environment/path.sh
+[3.499s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/environment/path.dsv
+[3.499s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/local_setup.bash
+[3.499s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/local_setup.sh
+[3.500s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/local_setup.zsh
+[3.500s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/local_setup.dsv
+[3.500s] -- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/package.dsv
+[3.500s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/ament_index/resource_index/packages/keyboard_control
+[3.500s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig.cmake
+[3.500s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig-version.cmake
+[3.500s] -- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/package.xml
+[3.502s] Invoked command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --install /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control

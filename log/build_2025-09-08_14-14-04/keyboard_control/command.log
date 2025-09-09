@@ -1,0 +1,2 @@
+Invoking command in '/home/Stage/LAB42_RTX_control/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/build/keyboard_control -- -j8 -l8
+Invoked command in '/home/Stage/LAB42_RTX_control/build/keyboard_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/build/keyboard_control -- -j8 -l8

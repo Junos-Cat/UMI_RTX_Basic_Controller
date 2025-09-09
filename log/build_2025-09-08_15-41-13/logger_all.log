@@ -1,0 +1,722 @@
+[0.170s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'keyboard_control']
+[0.170s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7dddb4701400>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['keyboard_control'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=8, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7dddb4701400>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7dddb4701850>)
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.312s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.313s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.313s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.313s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.313s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/Stage/LAB42_RTX_control'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extensions ['ignore', 'ignore_ament_install']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extension 'ignore'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extension 'ignore_ament_install'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(Media) by extension 'python_setup_py'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extension 'colcon_meta'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extensions ['ros']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extension 'ros'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extensions ['cmake', 'python']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extension 'cmake'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extension 'python'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extensions ['python_setup_py']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws) by extension 'python_setup_py'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/build) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/build) ignored
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extensions ['ignore', 'ignore_ament_install']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extension 'ignore'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extension 'ignore_ament_install'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extensions ['colcon_pkg']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extension 'colcon_pkg'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extensions ['colcon_meta']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extension 'ros'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extensions ['cmake', 'python']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extension 'cmake'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extension 'python'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extensions ['python_setup_py']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extension 'ignore'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extension 'ignore_ament_install'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extensions ['colcon_pkg']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extension 'colcon_pkg'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extensions ['colcon_meta']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extension 'colcon_meta'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extensions ['ros']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extension 'ros'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extensions ['cmake', 'python']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extension 'cmake'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extension 'python'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extensions ['python_setup_py']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html) by extension 'python_setup_py'
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extensions ['ignore', 'ignore_ament_install']
+[0.326s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extension 'ros'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extensions ['cmake', 'python']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extension 'cmake'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extension 'python'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extensions ['python_setup_py']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/html/search) by extension 'python_setup_py'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extensions ['ignore', 'ignore_ament_install']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extension 'ignore'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extension 'ignore_ament_install'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extensions ['colcon_pkg']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extension 'colcon_pkg'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extensions ['colcon_meta']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extension 'colcon_meta'
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extensions ['ros']
+[0.327s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extension 'ros'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extensions ['cmake', 'python']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extension 'cmake'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extension 'python'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extensions ['python_setup_py']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/doc/latex) by extension 'python_setup_py'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/install) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/install) ignored
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/log) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/log) ignored
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extension 'ignore'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extension 'ignore_ament_install'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extensions ['colcon_pkg']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extension 'colcon_pkg'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extensions ['colcon_meta']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extension 'colcon_meta'
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extensions ['ros']
+[0.328s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extension 'ros'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extensions ['cmake', 'python']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extension 'cmake'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extension 'python'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extensions ['python_setup_py']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src) by extension 'python_setup_py'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extensions ['ignore', 'ignore_ament_install']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extension 'ignore'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extension 'ignore_ament_install'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extensions ['colcon_pkg']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extension 'colcon_pkg'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extensions ['colcon_meta']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extension 'colcon_meta'
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extensions ['ros']
+[0.329s] Level 1:colcon.colcon_core.package_identification:_identify(ROS_ws/src/ros_interface_umi_rtx) by extension 'ros'
+[0.332s] DEBUG:colcon.colcon_core.package_identification:Package 'ROS_ws/src/ros_interface_umi_rtx' with type 'ros.ament_cmake' and name 'ros_interface_umi_rtx'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extension 'ignore'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extension 'ignore_ament_install'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extensions ['colcon_pkg']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extension 'colcon_pkg'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extensions ['colcon_meta']
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extension 'colcon_meta'
+[0.333s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extensions ['ros']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extension 'ros'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extensions ['cmake', 'python']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extension 'cmake'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extension 'python'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extensions ['python_setup_py']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws) by extension 'python_setup_py'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/build) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/build) ignored
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/install) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/install) ignored
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/log) by extension 'ignore'
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/log) ignored
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.334s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extension 'ros'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extensions ['cmake', 'python']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extension 'cmake'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extension 'python'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extensions ['python_setup_py']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src) by extension 'python_setup_py'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extensions ['ignore', 'ignore_ament_install']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extension 'ignore'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extension 'ignore_ament_install'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extensions ['colcon_pkg']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extension 'colcon_pkg'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extensions ['colcon_meta']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extension 'colcon_meta'
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extensions ['ros']
+[0.335s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/keyboard_control) by extension 'ros'
+[0.336s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_control_ws/src/keyboard_control' with type 'ros.ament_cmake' and name 'keyboard_control'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extensions ['ignore', 'ignore_ament_install']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extension 'ignore'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extension 'ignore_ament_install'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extensions ['colcon_pkg']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extension 'colcon_pkg'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extensions ['colcon_meta']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extension 'colcon_meta'
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extensions ['ros']
+[0.336s] Level 1:colcon.colcon_core.package_identification:_identify(ros_control_ws/src/yumi_manual_control) by extension 'ros'
+[0.337s] DEBUG:colcon.colcon_core.package_identification:Package 'ros_control_ws/src/yumi_manual_control' with type 'ros.ament_cmake' and name 'yumi_manual_control'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extensions ['ignore', 'ignore_ament_install']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extension 'ignore'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extension 'ignore_ament_install'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extensions ['colcon_pkg']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extension 'colcon_pkg'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extensions ['colcon_meta']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extension 'colcon_meta'
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extensions ['ros']
+[0.337s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extension 'ros'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extensions ['cmake', 'python']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extension 'cmake'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extension 'python'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extensions ['python_setup_py']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx) by extension 'python_setup_py'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extension 'ignore'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extension 'ignore_ament_install'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extensions ['colcon_pkg']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extension 'colcon_pkg'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extensions ['colcon_meta']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extension 'colcon_meta'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extensions ['ros']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extension 'ros'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extensions ['cmake', 'python']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extension 'cmake'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extension 'python'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extensions ['python_setup_py']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/bin) by extension 'python_setup_py'
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extensions ['ignore', 'ignore_ament_install']
+[0.338s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extension 'ros'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extensions ['cmake', 'python']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extension 'cmake'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extension 'python'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extensions ['python_setup_py']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/data) by extension 'python_setup_py'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extensions ['ignore', 'ignore_ament_install']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extension 'ignore'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extension 'ignore_ament_install'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extensions ['colcon_pkg']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extension 'colcon_pkg'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extensions ['colcon_meta']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extension 'colcon_meta'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extensions ['ros']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extension 'ros'
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extensions ['cmake', 'python']
+[0.339s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extension 'cmake'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extension 'python'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extensions ['python_setup_py']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/images) by extension 'python_setup_py'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extension 'colcon_pkg'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extensions ['colcon_meta']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extension 'colcon_meta'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extensions ['ros']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extension 'ros'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extensions ['cmake', 'python']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extension 'cmake'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extension 'python'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extensions ['python_setup_py']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include) by extension 'python_setup_py'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extensions ['ignore', 'ignore_ament_install']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extension 'ignore'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extension 'ignore_ament_install'
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extensions ['colcon_pkg']
+[0.340s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extension 'ros'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extensions ['cmake', 'python']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extension 'cmake'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extension 'python'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extensions ['python_setup_py']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd) by extension 'python_setup_py'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extensions ['ignore', 'ignore_ament_install']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extension 'ignore'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extension 'ignore_ament_install'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extensions ['colcon_pkg']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extension 'colcon_pkg'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extensions ['colcon_meta']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extension 'colcon_meta'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extensions ['ros']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extension 'ros'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extensions ['cmake', 'python']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extension 'cmake'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extension 'python'
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extensions ['python_setup_py']
+[0.341s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/bsd/sys) by extension 'python_setup_py'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extension 'ignore_ament_install'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extensions ['colcon_pkg']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extension 'colcon_pkg'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extensions ['colcon_meta']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extension 'colcon_meta'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extensions ['ros']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extension 'ros'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extensions ['cmake', 'python']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extension 'cmake'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extension 'python'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extensions ['python_setup_py']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/robotics) by extension 'python_setup_py'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extension 'ignore'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extension 'ignore_ament_install'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extensions ['colcon_pkg']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extension 'colcon_pkg'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extensions ['colcon_meta']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extension 'ros'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extensions ['cmake', 'python']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extension 'cmake'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extension 'python'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extensions ['python_setup_py']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers) by extension 'python_setup_py'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extensions ['ignore', 'ignore_ament_install']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extension 'ros'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extensions ['cmake', 'python']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extension 'cmake'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extension 'python'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extensions ['python_setup_py']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/include/umi-drivers/m68kipc) by extension 'python_setup_py'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extension 'ros'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extensions ['cmake', 'python']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extension 'cmake'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extension 'python'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extensions ['python_setup_py']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/lib) by extension 'python_setup_py'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extensions ['ignore', 'ignore_ament_install']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extension 'ignore'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extension 'ignore_ament_install'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extensions ['colcon_pkg']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extension 'colcon_pkg'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extensions ['colcon_meta']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extension 'colcon_meta'
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extensions ['ros']
+[0.344s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extension 'ros'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extensions ['cmake', 'python']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extension 'cmake'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extension 'python'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extensions ['python_setup_py']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/locks) by extension 'python_setup_py'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extension 'ignore_ament_install'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extensions ['colcon_pkg']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extension 'colcon_pkg'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extensions ['colcon_meta']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extension 'colcon_meta'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extensions ['ros']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extension 'ros'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extensions ['cmake', 'python']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extension 'cmake'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extension 'python'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extensions ['python_setup_py']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/logs) by extension 'python_setup_py'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extensions ['ignore', 'ignore_ament_install']
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extension 'ignore'
+[0.345s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extension 'ros'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extensions ['cmake', 'python']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extension 'cmake'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extension 'python'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extensions ['python_setup_py']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/ports) by extension 'python_setup_py'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extensions ['ignore', 'ignore_ament_install']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extension 'ignore'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extension 'ignore_ament_install'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extensions ['colcon_pkg']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extension 'colcon_pkg'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extensions ['colcon_meta']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extension 'colcon_meta'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extensions ['ros']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extension 'ros'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extensions ['cmake', 'python']
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extension 'cmake'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extension 'python'
+[0.346s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extensions ['python_setup_py']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/robot) by extension 'python_setup_py'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extension 'colcon_meta'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extensions ['ros']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extension 'ros'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extensions ['cmake', 'python']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extension 'cmake'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extension 'python'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extensions ['python_setup_py']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src) by extension 'python_setup_py'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extensions ['ignore', 'ignore_ament_install']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extension 'ignore'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extension 'ignore_ament_install'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extensions ['colcon_pkg']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extension 'colcon_pkg'
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extensions ['colcon_meta']
+[0.347s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extension 'ros'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extensions ['cmake', 'python']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extension 'cmake'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extension 'python'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extensions ['python_setup_py']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/armlib) by extension 'python_setup_py'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extensions ['ignore', 'ignore_ament_install']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extension 'ignore'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extension 'ignore_ament_install'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extensions ['colcon_pkg']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extension 'colcon_pkg'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extensions ['colcon_meta']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extension 'colcon_meta'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extensions ['ros']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extension 'ros'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extensions ['cmake', 'python']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extension 'cmake'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extension 'python'
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extensions ['python_setup_py']
+[0.348s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/daemon) by extension 'python_setup_py'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extension 'colcon_meta'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extensions ['ros']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extension 'ros'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extensions ['cmake', 'python']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extension 'cmake'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extension 'python'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extensions ['python_setup_py']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/game) by extension 'python_setup_py'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extensions ['ignore', 'ignore_ament_install']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extension 'ignore'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extension 'ignore_ament_install'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extensions ['colcon_pkg']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extension 'colcon_pkg'
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extensions ['colcon_meta']
+[0.349s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extension 'ros'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extensions ['cmake', 'python']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extension 'cmake'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extension 'python'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extensions ['python_setup_py']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/gnuchess) by extension 'python_setup_py'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extensions ['ignore', 'ignore_ament_install']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extension 'ignore'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extension 'ignore_ament_install'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extensions ['colcon_pkg']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extension 'colcon_pkg'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extensions ['colcon_meta']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extension 'colcon_meta'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extensions ['ros']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extension 'ros'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extensions ['cmake', 'python']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extension 'cmake'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extension 'python'
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extensions ['python_setup_py']
+[0.350s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/hostlib) by extension 'python_setup_py'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extension 'ignore'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extension 'ignore_ament_install'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extensions ['colcon_pkg']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extension 'colcon_pkg'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extensions ['colcon_meta']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extension 'colcon_meta'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extensions ['ros']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extension 'ros'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extensions ['cmake', 'python']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extension 'cmake'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extension 'python'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extensions ['python_setup_py']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/inverse) by extension 'python_setup_py'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extensions ['ignore', 'ignore_ament_install']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extension 'ignore'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extension 'ignore_ament_install'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extensions ['colcon_pkg']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extension 'colcon_pkg'
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extensions ['colcon_meta']
+[0.351s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extension 'ros'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extensions ['cmake', 'python']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extension 'cmake'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extension 'python'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extensions ['python_setup_py']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/matrix) by extension 'python_setup_py'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extensions ['ignore', 'ignore_ament_install']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extension 'ignore'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extension 'ignore_ament_install'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extensions ['colcon_pkg']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extension 'colcon_pkg'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extensions ['colcon_meta']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extension 'colcon_meta'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extensions ['ros']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extension 'ros'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extensions ['cmake', 'python']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extension 'cmake'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extension 'python'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extensions ['python_setup_py']
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/move) by extension 'python_setup_py'
+[0.352s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extensions ['ros']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extension 'ros'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extensions ['cmake', 'python']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extension 'cmake'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extension 'python'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extensions ['python_setup_py']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/pathplan) by extension 'python_setup_py'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extensions ['ignore', 'ignore_ament_install']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extension 'ignore'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extension 'ignore_ament_install'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extensions ['colcon_pkg']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extension 'colcon_pkg'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extensions ['colcon_meta']
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extension 'colcon_meta'
+[0.353s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extension 'ros'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extensions ['cmake', 'python']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extension 'cmake'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extension 'python'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extensions ['python_setup_py']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/playall) by extension 'python_setup_py'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extensions ['ignore', 'ignore_ament_install']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extension 'ignore'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extension 'ignore_ament_install'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extensions ['colcon_pkg']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extension 'colcon_pkg'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extensions ['colcon_meta']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extension 'colcon_meta'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extensions ['ros']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extension 'ros'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extensions ['cmake', 'python']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extension 'cmake'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extension 'python'
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extensions ['python_setup_py']
+[0.354s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/rtxlib) by extension 'python_setup_py'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extensions ['ignore', 'ignore_ament_install']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extension 'ignore'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extension 'colcon_pkg'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extensions ['colcon_meta']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extension 'colcon_meta'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extensions ['ros']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extension 'ros'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extensions ['cmake', 'python']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extension 'cmake'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extension 'python'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extensions ['python_setup_py']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell) by extension 'python_setup_py'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extensions ['ignore', 'ignore_ament_install']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extension 'ignore'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extension 'ignore_ament_install'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extensions ['colcon_pkg']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extension 'colcon_pkg'
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extensions ['colcon_meta']
+[0.355s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extension 'ros'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extensions ['cmake', 'python']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extension 'cmake'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extension 'python'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extensions ['python_setup_py']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/shell/readline) by extension 'python_setup_py'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extensions ['ignore', 'ignore_ament_install']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extension 'ignore'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extension 'ignore_ament_install'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extensions ['colcon_pkg']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extension 'colcon_pkg'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extensions ['colcon_meta']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extension 'colcon_meta'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extensions ['ros']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extension 'ros'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extensions ['cmake', 'python']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extension 'cmake'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extension 'python'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extensions ['python_setup_py']
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/stub_pp) by extension 'python_setup_py'
+[0.356s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extension 'ros'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extensions ['cmake', 'python']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extension 'cmake'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extension 'python'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extensions ['python_setup_py']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/umi) by extension 'python_setup_py'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extensions ['ignore', 'ignore_ament_install']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extension 'ignore'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extension 'ignore_ament_install'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extensions ['colcon_pkg']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extension 'colcon_pkg'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extensions ['colcon_meta']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extension 'colcon_meta'
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extensions ['ros']
+[0.357s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extension 'ros'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extensions ['cmake', 'python']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extension 'cmake'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extension 'python'
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extensions ['python_setup_py']
+[0.358s] Level 1:colcon.colcon_core.package_identification:_identify(umi-rtx/src/xml_parser) by extension 'python_setup_py'
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.358s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.372s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'ros_interface_umi_rtx' in 'ROS_ws/src/ros_interface_umi_rtx'
+[0.373s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'yumi_manual_control' in 'ros_control_ws/src/yumi_manual_control'
+[0.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.375s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 261 installed packages in /opt/ros/foxy
+[0.377s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_cache' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_clean_first' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'cmake_force_configure' from command line to 'False'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'ament_cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_cmake_args' from command line to 'None'
+[0.451s] Level 5:colcon.colcon_core.verb:set package 'keyboard_control' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.451s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard_control' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/Stage/LAB42_RTX_control/build/keyboard_control', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/Stage/LAB42_RTX_control/install/keyboard_control', 'merge_install': False, 'path': '/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control', 'symlink_install': False, 'test_result_base': None}
+[0.451s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.452s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.452s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control' with build type 'ament_cmake'
+[0.452s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control'
+[0.454s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/Stage/LAB42_RTX_control/build/keyboard_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/build/keyboard_control -- -j8 -l8
+[1.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/Stage/LAB42_RTX_control/build/keyboard_control' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/build/keyboard_control -- -j8 -l8
+[1.163s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_control)
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/home/Stage/LAB42_RTX_control/install/keyboard_control' for CMake module files
+[1.166s] Level 1:colcon.colcon_core.environment:checking '/home/Stage/LAB42_RTX_control/install/keyboard_control' for CMake config files
+[1.166s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_control', 'cmake_prefix_path')
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.ps1'
+[1.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.dsv'
+[1.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/hook/cmake_prefix_path.sh'
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/home/Stage/LAB42_RTX_control/install/keyboard_control/lib'
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/home/Stage/LAB42_RTX_control/install/keyboard_control/bin'
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/home/Stage/LAB42_RTX_control/install/keyboard_control/lib/pkgconfig/keyboard_control.pc'
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/home/Stage/LAB42_RTX_control/install/keyboard_control/lib/python3.8/site-packages'
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/home/Stage/LAB42_RTX_control/install/keyboard_control/bin'
+[1.169s] INFO:colcon.colcon_core.shell:Creating package script '/home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/package.ps1'
+[1.171s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/package.dsv'
+[1.172s] INFO:colcon.colcon_core.shell:Creating package script '/home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/package.sh'
+[1.173s] INFO:colcon.colcon_core.shell:Creating package script '/home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/package.bash'
+[1.174s] INFO:colcon.colcon_core.shell:Creating package script '/home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/package.zsh'
+[1.174s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/Stage/LAB42_RTX_control/install/keyboard_control/share/colcon-core/packages/keyboard_control)
+[1.175s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.175s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.175s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[1.175s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.183s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[1.184s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.184s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.184s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.184s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.NotSupported: Unable to autolaunch a dbus-daemon without a $DISPLAY for X11
+[1.184s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.184s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/Stage/LAB42_RTX_control/install/local_setup.ps1'
+[1.186s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/Stage/LAB42_RTX_control/install/_local_setup_util_ps1.py'
+[1.187s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/Stage/LAB42_RTX_control/install/setup.ps1'
+[1.189s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/Stage/LAB42_RTX_control/install/local_setup.sh'
+[1.190s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/Stage/LAB42_RTX_control/install/_local_setup_util_sh.py'
+[1.190s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/Stage/LAB42_RTX_control/install/setup.sh'
+[1.192s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/Stage/LAB42_RTX_control/install/local_setup.bash'
+[1.192s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/Stage/LAB42_RTX_control/install/setup.bash'
+[1.194s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/Stage/LAB42_RTX_control/install/local_setup.zsh'
+[1.194s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/Stage/LAB42_RTX_control/install/setup.zsh'

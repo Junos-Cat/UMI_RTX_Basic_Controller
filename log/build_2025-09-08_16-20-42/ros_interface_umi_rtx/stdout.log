@@ -1,0 +1,123 @@
+[  2%] [34m[1mAutomatic MOC and UIC for target armerror[0m
+[  5%] [34m[1mAutomatic MOC and UIC for target GUI[0m
+[  7%] [34m[1mAutomatic MOC and UIC for target nodeInverseKinematics[0m
+[ 10%] [34m[1mAutomatic MOC and UIC for target armraw[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target nodeSimu[0m
+[ 15%] [34m[1mAutomatic MOC and UIC for target armcmds[0m
+[ 15%] Built target armerror_autogen
+[ 15%] Built target GUI_autogen
+[ 15%] Built target nodeSimu_autogen
+[ 15%] Built target nodeInverseKinematics_autogen
+[ 15%] Built target armcmds_autogen
+[ 15%] Built target armraw_autogen
+[ 23%] Built target armerror
+[ 31%] Built target armcmds
+[ 39%] Built target nodeSimu
+[ 47%] Built target armraw
+[ 55%] Built target nodeInverseKinematics
+[ 65%] Built target GUI
+[ 68%] [34m[1mAutomatic MOC and UIC for target nodeArm[0m
+[ 68%] Built target nodeArm_autogen
+[35m[1mScanning dependencies of target nodeArm[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/nodeArm.dir/src/node_arm.cpp.o[0m
+[ 73%] [32m[1mLinking CXX executable nodeArm[0m
+[100%] Built target nodeArm
+-- Install configuration: ""
+-- Installing: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/nodeArm
+-- Set runtime path of "/home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/nodeArm" to ""
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/nodeInverseKinematics
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/nodeSimu
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/lib/ros_interface_umi_rtx/GUI
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/_template.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/matrix.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/chesscmds.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/path.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/armlib.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/inverse.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/umiinit.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/config.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/xml_parser.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/chess.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/spp.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/umi.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/interface.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/arm.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/pathplan.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/basics.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/robotics/simulator.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_invkin.hpp
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/rapidxml.hpp
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/mainpage.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts/wrist.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts/forearm.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts/arm.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/arm_parts/joint.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_simu.hpp
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_arm.hpp
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/armraw.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/rtx.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/rtxd.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/armlib.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/duart.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/ipc.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/comm.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/680x0.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/rtxcmds.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/ipcrt.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/hostlib.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/m68kipc
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/m68kipc/a.out.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/umi-drivers/m68kipc/exec.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/bsd
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/bsd/sys
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/bsd/sys/ioccom.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/bsd/sys/filio.h
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/main_gui.hpp
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_camera.hpp
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_camera_API.hpp
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/include/include/ros_interface_umi_rtx/node_commands.hpp
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/launch
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/launch/simu.launch.py
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/launch/arm.launch.py
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/rviz
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/rviz/rviz_basic_settings.rviz
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/urdf
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/urdf/umi_rtx.urdf
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/images
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/images/icon.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image02.jpg
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage03.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage05.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage01.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage04.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage05.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage02.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage02.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image01.jpg
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image05.jpg
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image04.jpg
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage04.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/image03.jpg
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/rightImage03.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/CalibrationImages/leftImage01.png
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ament_index/resource_index/package_run_dependencies/ros_interface_umi_rtx
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ament_index/resource_index/parent_prefix_path/ros_interface_umi_rtx
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/environment/ament_prefix_path.sh
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/environment/path.sh
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/environment/path.dsv
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/local_setup.bash
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/local_setup.sh
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/local_setup.zsh
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/local_setup.dsv
+-- Installing: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/package.dsv
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ament_index/resource_index/packages/ros_interface_umi_rtx
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/cmake/ros_interface_umi_rtxConfig.cmake
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/cmake/ros_interface_umi_rtxConfig-version.cmake
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx/share/ros_interface_umi_rtx/package.xml

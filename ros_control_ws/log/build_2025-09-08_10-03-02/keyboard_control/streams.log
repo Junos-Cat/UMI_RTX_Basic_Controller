@@ -1,0 +1,33 @@
+[0.012s] Invoking command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8
+[0.064s] [35m[1mScanning dependencies of target nodeGripTester[0m
+[0.091s] [ 50%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m
+[1.246s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In constructor ‘[01m[KnodeKeyboardCommand::nodeKeyboardCommand()[m[K’:
+[1.246s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:28:13:[m[K [01;31m[Kerror: [m[K‘[01m[KposePublisherObject[m[K’ was not declared in this scope; did you mean ‘[01m[KgripPublisherObject[m[K’?
+[1.246s]    28 |             [01;31m[KposePublisherObject[m[K = this->create_publisher<geometry_msgs::msg::Pose>("target_pose",5);
+[1.247s]       |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.247s]       |             [32m[KgripPublisherObject[m[K
+[1.250s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In member function ‘[01m[Kvoid nodeKeyboardCommand::key_loop()[m[K’:
+[1.250s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:116:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kclamp[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[1.250s]   116 |                 grip_pose = std::[01;31m[Kclamp[m[K(grip_pose, 0.0, 0.1);
+[1.250s]       |                                  [01;31m[K^~~~~[m[K
+[1.257s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:124:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kdirt_pose[m[K’ was not declared in this scope; did you mean ‘[01m[Kdirty_pose[m[K’?
+[1.257s]   124 |                 if ([01;31m[Kdirt_pose[m[K == true)
+[1.257s]       |                     [01;31m[K^~~~~~~~~[m[K
+[1.257s]       |                     [32m[Kdirty_pose[m[K
+[1.258s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:126:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ has no member named ‘[01m[KPoint[m[K’
+[1.258s]   126 |                     pose_message.[01;31m[KPoint[m[K.x = x_pose;
+[1.258s]       |                                  [01;31m[K^~~~~[m[K
+[1.258s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:127:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ has no member named ‘[01m[KPoint[m[K’
+[1.258s]   127 |                     pose_message.[01;31m[KPoint[m[K.x = y_pose;
+[1.258s]       |                                  [01;31m[K^~~~~[m[K
+[1.258s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:128:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ has no member named ‘[01m[KPoint[m[K’
+[1.258s]   128 |                     pose_message.[01;31m[KPoint[m[K.x = z_pose;
+[1.258s]       |                                  [01;31m[K^~~~~[m[K
+[1.259s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:129:21:[m[K [01;31m[Kerror: [m[K‘[01m[KposePublisherObject[m[K’ was not declared in this scope; did you mean ‘[01m[KgripPublisherObject[m[K’?
+[1.259s]   129 |                     [01;31m[KposePublisherObject[m[K->publish(pose_message);
+[1.259s]       |                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[1.259s]       |                     [32m[KgripPublisherObject[m[K
+[2.160s] make[2]: *** [CMakeFiles/nodeGripTester.dir/build.make:63: CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o] Error 1
+[2.160s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nodeGripTester.dir/all] Error 2
+[2.160s] make: *** [Makefile:141: all] Error 2
+[2.163s] Invoked command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8

@@ -1,0 +1,35 @@
+-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/Stage/LAB42_RTX_control/build/keyboard_control
+[35m[1mScanning dependencies of target nodeKeyboardControl[0m
+[35m[1mScanning dependencies of target nodeGripTester[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/nodeKeyboardControl.dir/src/keyboard_control.cpp.o[0m
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In member function ‘[01m[Kvoid nodeKeyboardCommand::key_loop()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:184:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrip_message[m[K’ was not declared in this scope
+  184 |                     [01;31m[Kgrip_message[m[K.data = grip_pose;
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:190:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_message[m[K’ was not declared in this scope
+  190 |                     [01;31m[Kpose_message[m[K.position.x = x_pose;
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In lambda function:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:303:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyboard_node[m[K’ was not declared in this scope; did you mean ‘[01m[Kkeyboard_control[m[K’?
+  303 |     std::thread key_thread([&]() { [01;31m[Kkeyboard_node[m[K->key_loop(); });
+      |                                    [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                    [32m[Kkeyboard_control[m[K
+make[2]: *** [CMakeFiles/nodeGripTester.dir/build.make:63: CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nodeGripTester.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 75%] [32m[1mLinking CXX executable nodeKeyboardControl[0m
+[ 75%] Built target nodeKeyboardControl
+make: *** [Makefile:141: all] Error 2

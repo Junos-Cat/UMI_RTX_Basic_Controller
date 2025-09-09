@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control/CMakeCache.txt is different than the directory /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+make: *** [Makefile:266: cmake_check_build_system] Error 1

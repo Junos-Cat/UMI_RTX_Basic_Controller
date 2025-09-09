@@ -1,0 +1,6 @@
+[0.008s] Invoking command in '/home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control': /usr/bin/cmake --build /home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8
+[0.014s] [0mCMake Error: The current CMakeCache.txt directory /home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control/CMakeCache.txt is different than the directory /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.023s] [0mCMake Error: The source directory "/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control" does not exist.
+[0.023s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.024s] make: *** [Makefile:266: cmake_check_build_system] Error 1
+[0.026s] Invoked command in '/home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control' returned '2': /usr/bin/cmake --build /home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8

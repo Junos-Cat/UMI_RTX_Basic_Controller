@@ -1,0 +1,3 @@
+[35m[1mScanning dependencies of target nodeGripTester[0m
+[ 50%] Built target nodeKeyboardControl
+[ 75%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m

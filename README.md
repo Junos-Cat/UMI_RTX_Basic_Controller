@@ -1,247 +1,276 @@
-# ROS2 Interface for the UMI-RTX Arm
+# UMI RTX Robotic Arm Demos
 
-### Autors
-* GARDE Guillaume (Promotion [_ENSTA Bretagne_](https://www.ensta-bretagne.fr) 2024 - Spécialité Robotique Autonome).
-* MASSA Théo (Promotion [_ENSTA Bretagne_](https://www.ensta-bretagne.fr) 2024 - Spécialité Robotique Autonome).
+## Background
+This is a bare bone keyboard controller for the UMI RTX Robotic Arm (Yumi). It uses the driver provided by [Physar](https://github.com/physar/umi-rtx), and two nodes from [GARDE & MASSA](https://github.com/gardegu/LAB42_RTX_control), namely the nodeArm and nodeInverseKinematics nodes.
 
-This project was made during an internship at the [_University of Amsterdam_](https://www.uva.nl/en) under the supervision of Arnoud Visser PhD.
+I created this repo with modifications to GARDE & MASSA's code as their project requires the use of a Realsense camera and a GPU. The start_arm\_control.sh script runs the driver, the nodes that interact with the driver, and the controller node which interprets the keyboard inputs and publishes the commands to the /target_grip and /target_pose topics.
 
-# Table of Contents
+Please note, this project is not meant to provide a polished controller for the robotic arm. It is meant to allow others to install the minimum packages neccesary to get their robitic arm up and moving. It is provided only so that others (including myself) may build upon it. Hopefully the controllers available will give you a few idea of how you wish to control the arm.
 
-- [Description](#description)
-- [Documentation](#documentation)
-- [Configuration](#configuration)
-- [Requirements](#requirements)
-- [Usage](#usage)
-    - [Build the package](#build-the-package)
-    - [Testing](#testing)
-    - [Real Arm](#real-arm)
-    - [Simulation](#simulation)
-    - [Docker](#docker)
-        - [Installation](#installation)
-        - [Usage](#usage-1)
-- [Demonstration](#demonstration)
-- [Fallback method](#fallback-method)
+## Installation
 
-### Description
-![The UMI-RTX robotic arm](Media/UMI-RTX-photo.png)
+To use this porject, you will need to use Docker. To learn more about Docker, what it is, and why it's useful, see this [video](https://youtu.be/DQdB7wFEygo).
 
-This repository provides tools to set up a ROS 2 interface for controlling the UMI-RTX robotic arm.
-The mission of this project is to make the arm detect a target (we chose a banana plush) via computer vision and then move to grab it and lift it.
-The different nodes of the ROS architecture correspond to:
-* inverse kinematics
-* arm control 
-* computer vision
-* simulation
-* custom Graphic User Interface (GUI)
+### Docker Installation
 
-A vast majority of this project's code (the one we wrote) is in C++.
+To install Docker follow the steps on their [website](https://docs.docker.com/engine/install/).
 
-### Documentation
-A documentation of the code can be found in [/ROS_ws/doc/](/ROS_ws/doc/). To open the doc in html, just launch *index.html*.
+For installing using the `apt` repository on Ubuntu do the following:
 
-You can find the original drivers in [/umi-rtx](/umi-rtx) or on this [repository](https://github.com/physar/umi-rtx)
+1. Set up Docker's `apt` repository.
+```
+# Add Docker's official GPG key:
+sudo apt-get update
+sudo apt-get install ca-certificates curl
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
 
-[Here](https://staff.fnwi.uva.nl/a.visser/education/ZSB/2023/UmiRtxRos2interface.pdf) is the internship report related to this project.
+# Add the repository to Apt sources:
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}") stable" | \
+  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt-get update
+```
 
-### Configuration
-This project is built and tested with **Ubuntu 20.04** and **ROS2 Foxy**. In case these settings are not supported, see [this part](#docker).
+2. Install the Docker packages.
+```
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+3. Verify that the installation is successful by running the `hello-world` image:
+```
+sudo docker run hello-world
+```
+
+This command downloads a test image and runs it in a container. When the container runs, it prints a confirmation message and exits.
+
+You have now successfully installed and started Docker Engine.
+
+### Run using prebuilt Docker container
+
+If you wish to use the arm without ---------------------
+
+However, this is not recommended as this project is meant to provide a foundation on top of which you build your own means of control. To iterate on and change the code in this project you'll need to build and run your own containers which is explained in the next section.
+
+### Build and run custom Docker containers
+
+This is the recommended means of working with this project.
+The usefulness of building and running your own containers is that you can add your own workspace, and packages.
+
+1. Build your image
+To build your Docker image, you need a Dockerfile, which contains the instructions for Docker. In the same directory as your `Dockerfile`, run:
+```bash
+docker build -t my-image-name:latest .
+```
+
+`.` means "build context is the current directory" so if you really want, you can replace this with the location to the aformentioned directory.
+
+2. Check your image
+To list your local images, from any directory, run:
+```bash
+docker images
+```
+
+You should see `my-image-name` in the list.
+
+3. Run a container from your image
+To run a container from your image, from any directory, run:
+```bash
+docker run -it my-image-name:latest
+```
+
+You may need to run it with elevated permissions as I did:
+```bash
+sudo docker run -it my-image-name:latest --name yumi
+```
+
+When working on your own pachages, you may wish to make your own repository and change the following line in the `Dockerfile` to clone from your repository.
+`RUN git clone https://github.com/gardegu/LAB42_RTX_control.git`
+Or you may wish to do as I did during development, which was to [mount](https://docs.docker.com/engine/storage/bind-mounts/) your local directory as follows, and then create a repository when you're finished developing.
+```bash
+sudo docker run -it \
+    --name yumi \
+    -v ~/Desktop/JUNO/LAB42_RTX_control/:/home/Stage/LAB42_RTX_control/ \
+    my-image-name
+```
+
+3. Check your container
+You should now be able to see a list of running containers by running:
+```bash
+sudo docker ps
+```
+and a list of all running and stopped containers by running:
+```bash
+sudo docker ps -a
+```
+
+0. Notes on containers/useful commands
+When containers are stopped (by entering `exit` in the container terminal), any changes made in the container persist unless you remove the container by running:
+```bash
+sudo docker rm yumi
+```
+Said changes do not transfer to any new containers unless you use volumes or mounts, in which case the data persists independently of the container lifesycle.
+
+You can restart a container with all of it's local changes by running:
+```bash
+sudo docker start <container_id>
+```
+This does not "put you in" the terminal, this simply runs the container in the background (detached mode). To get inside the container in interactive mode run
+```bash
+sudo docker exec -it <container_id> /bin/bash
+```
+or
+```bash
+sudo docker exec -it <container_name> /bin/bash
+```
+
+## Running 
+
+### Check that the UMI RTX Robotic Arm is connected
+
+As it sands, the 
 
 
-Used material in this project:
-* A UMI-RTX robotic arm
+## Notes on the UMI RTX Driver
 
-  ![UMI-RTX robotic arm](Media/UMI-RTX-Arm.png)
+The driver 
 
-* A Stereolabs [_ZED Mini_](https://www.stereolabs.com/zed-mini/) stereo camera and its cable
+
+
+
+
+
+
+
+
+
+
+
+
+## Installation
+
+This project is built and tested with **Ubuntu 22.04** and **ROS2 Iron**.
+
+1. **ROS2 Installation**
+
+    First, ensure you have ROS2 Iron installed. If not, follow the instructions provided [here](https://docs.ros.org/en/iron/Installation.html) for installation. 
+    After installation, set up your environment by sourcing ROS2. If you're not using bash, adjust accordingly by replacing ".bash" with your shell type in the following command:
     
-  ![The ZED Mini camera](Media/ZEDM.png)
+    ```bash
+    source /opt/ros/iron/setup.bash
+    ```
+    To avoid sourcing it every time, consider adding this line to the end of your `~/.bashrc` file.
 
-* A standard banana plush
+2. **Install Dependencies**
 
-  ![The banana plush](Media/Banana.jpg)
+    Start by updating your package lists:
+    ```bash
+    sudo apt update
+    ```
+   Then, install the necessary dependencies including Pinocchio for inverse kinematics or xacro:
+    ```bash
+    sudo apt install ros-iron-pinocchio -y
+    sudo apt install ros-iron-xacro -y
+    ```
 
-* An Intel Core i9 processor and a Nvidia GPU (Geforce **RTX**)
+3. **Colcon installation**
 
-**Note**: The ZED Mini cable needs to be plugged into the device with its incurved arrows on the same side as the lenses.
+    Install Colcon, the build tool required for this project:
+    ```bash
+    sudo apt udpate
+    sudo apt install python3-colcon-common-extensions
+   ```
+4. **Autocompletion**
 
-### Requirements
-The computer vision node uses _OpenCV_ and [Stereolabs](https://www.stereolabs.com/)' Software Development Kit (SDK).
-To use the SDK, a powerful [_Nvidia_](https://www.nvidia.com/fr-fr/) Graphics Processing Unit (GPU) is required. See [here](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#system-requirements) for a compatibility check and installation.
+    Enable autocompletion for Colcon:
+    ```bash
+    source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+    ```
 
-**Note**: Two versions of the computer vision node are provided here but only one will be launched. This version uses
-the SDK and _OpenCV_. The other version is the first we wrote and only uses _OpenCV_.
-However, it is not performant enough and gives bad results.
+   To avoid sourcing it every time, add this line to the end of your `~/.bashrc` file.
 
-If you plan not to use [Docker](#docker), you need to download and install the SDK as well as Nvidia drivers.
-See [here](https://www.stereolabs.com/docs/installation/linux/) to install the SDK on Linux. If you followed all the steps, the Nvidia drivers should be installed.
+### Build the Package
 
-### Usage
-#### Build the package
-In order to use the interface, you will need to build the ROS 2 package (don't forget to source ROS 2 beforehand).
+Navigate to your ROS workspace directory:
 
-    ## install the required dependencies
-    ./install_dependencies.sh
-    cd ROS_ws
-    ## Build the package
-    colcon build
+```bash
+cd ROS_ws
+```
 
-If you are on bash:
+Build the package using Colcon:
 
-    source install/setup.bash
-    
-If you are on zsh:
+```bash
+colcon build
+```
 
-    source install/setup.zsh
+Once built, source it to set up your environment:
+```bash
+source install/setup.bash
+```
 
-#### Testing
-To test the computer vision node separatly, follow the commands below:
+### Run simulation
 
-    ros2 run ros_interface_umi_rtx nodeCameraAPI
+To run the simulation, execute the following command:
+```bash
+ros2 launch umi_rtx_controller simu.launch.py
+```
 
-Once the node is running, you can interact with its output thanks to diverses tools like [RQt](https://docs.ros.org/en/foxy/Concepts/About-RQt.html) or RViz.
+## Docker
 
-#### Real arm
-To use the interface, all you have to do is :
+### 1. Docker installation
 
-    cd LAB42_RTX_control
-    ## Launch the arm
-    ./start_arm
+```bash
+distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
+curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 
-The custom GUI will launch in the same time as the arm
+sudo apt-get update && sudo apt-get install -y nvidia-docker2 nvidia-container-toolkit
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+```
 
-If you want to monitor the nodes and topics or interact with them, all you have to do is logging as root:
+### 2. Build the docker image
 
-    sudo -i
-
-And then sourcing ROS:
-
-    source /opt/ros/foxy/setup.bash
-
-#### Simulation
-In order to start only the simulation, just run:
-
-    ros2 launch ros_interface_umi_rtx simu.launch.py
-
-### Docker
-As told earlier, this project works under Ubuntu 20.04 and ROS2 Foxy. However, the usage of the interface is not limited to this configuration thanks to a custom Docker image that allows to use our interface with a different configuration.
-
-#### Installation
-The only requirements are to have Docker installed on your computer (see [here](https://docs.docker.com/get-docker/) to install Docker), to have a NVIDIA GPU with the necessary drivers for which the installation process is described [earlier](#requirements), and having installed the [nvidia-docker-toolkit](https://github.com/NVIDIA/nvidia-docker). 
-
-    distribution=$(. /etc/os-release;echo $ID$VERSION_ID)
-    curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | sudo apt-key add -
-    curl -s -L https://nvidia.github.io/nvidia-docker/$distribution/nvidia-docker.list | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
-
-    sudo apt-get update && sudo apt-get install -y nvidia-docker2 nvidia-container-toolkit
-    sudo systemctl daemon-reload
-    sudo systemctl restart docker
-
-Once this is done, you can build the docker image with the command:
-
-    # Place yourself in LAB42_RTX_CONTROL
-    docker build -t "name" .
+```bash
+# Place yourself in umi_rtx_demos
+docker build -t "name" .
+```
 
 Be careful to replace "name" with the name you want, and everything is ready !
-#### Usage
-To run our image into a container, run :
 
-    # Give the permission to use the screen
-    xhost +
+### 3. Run the image into a container
 
-    # Launch the container (replace "name" with the name you chose)
-    docker run --gpus all -it --privileged -e DISPLAY=$DISPLAY -v \\
-                /tmp/.X11-unix:/tmp/.X11-unix --rm "name":latest
+```bash
+# Give the permission to use the screen
+xhost +
 
-Once the container is running, the process is similar as the one descibed [here](#usage)
+# Launch the container (replace "name" with the name you chose)
+docker run --gpus all -it --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --rm "name":latest
+```
 
-    cd ROS_ws/
-    colcon build
-    source install/setup.bash
-    cd ..
+### 4. Run the program
 
-If you want to use the arm, do
+Start by running these commands:
 
-    ./start_arm.sh
+```bash
+cd ROS_ws/
+colcon build
+source install/setup.bash
+cd ..
+```
 
-If you want to launch only the simulation, do
+Then, if you want to launch only the simulation, run this:
 
-    ros2 launch ros_interace_umi_rtx simu.launch.py
+```bash
+ros2 launch umi_rtx_controller simu.launch.py
+```
+
+If you want to use the arm, run this:
+
+```bash
+./start_arm.sh
+```
 
 
-### Demonstration
-[Here](https://www.youtube.com/playlist?list=PLr7kwtXen7-Se0UGnNa_Y2hR0W9sA3iEf) is a link to a Youtube playlist where you can find some trials and demonstration of the interface.
-
-## Fallback method
-An other way to manage the computer vision part is to have a look at the following files:
-
-    ROS_ws/src/ros_interface_umi_rtx/include/ros_interface_umi_rtx/node_camera.hpp
-    ROS_ws/src/ros_interface_umi_rtx/src/node_camera.cpp
-
-This code does not require the SDK to work but needs to be improved and corrected.
-
-### Procedure
-In the _CMakeLists.txt_ file, comment these two lines
-
-    find_package(ZED 3 REQUIRED)
-    find_package(CUDA ${ZED_CUDA_VERSION} REQUIRED)
-
-In _include_directories()_, also comment
-
-    ${CUDA_INCLUDE_DIRS}
-    ${ZED_INCLUDE_DIRS}
-
-Comment this whole section
-
-    ##################################### Node camera API
-    add_executable(nodeCameraAPI
-        src/node_camera_API.cpp
-        )
-
-    ament_target_dependencies(nodeCameraAPI
-        rclcpp
-        sensor_msgs
-        OpenCV
-        cv_bridge
-        geometry_msgs
-        ament_index_cpp
-        std_msgs
-        ZED
-        CUDA
-        )
-
-    target_link_libraries(nodeCameraAPI "${cpp_typesupport_target}" ${OpenCV_LIBS} ${ZED_LIBRARY_DIR} ${CUDA_LIBRARY_DIRS})
-    target_include_directories(nodeCameraAPI PUBLIC
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-        $<INSTALL_INTERFACE:include>)
-
-Replace the line
-
-    install(TARGETS nodeCamera nodeArm nodeInverseKinematics nodeSimu GUI nodeCameraAPI
-    DESTINATION lib/${PROJECT_NAME})
-
-By
-
-    install(TARGETS nodeCamera nodeArm nodeInverseKinematics nodeSimu GUI
-    DESTINATION lib/${PROJECT_NAME})
-
-In _package.xml_, comment
-
-    <depend>sl</depend>
-
-In the launch files
-
-    ROS_ws/src/ros_interface_umi_rtx/launch/arm.launch.py
-    ROS_ws/src/ros_interface_umi_rtx/launch/simu.launch.py
-
-Delete
-
-    nodeCameraAPI = Node(
-        package = 'ros_interface_umi_rtx',
-        namespace='',
-        executable='nodeCameraAPI',
-        name='camera_api',
-        )
-
-Then replace _nodeCameraAPI_ by _nodeCamera_ in _return LaunchDescription_( ... ).
-You are now all set and can follow the building section.

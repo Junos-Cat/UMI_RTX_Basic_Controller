@@ -1,0 +1,31 @@
+[35m[1mScanning dependencies of target nodeGripTester[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In constructor ‘[01m[KnodeKeyboardCommand::nodeKeyboardCommand()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:28:13:[m[K [01;31m[Kerror: [m[K‘[01m[KposePublisherObject[m[K’ was not declared in this scope; did you mean ‘[01m[KposePublisherObejct[m[K’?
+   28 |             [01;31m[KposePublisherObject[m[K = this->create_publisher<geometry_msgs::msg::Pose>("target_pose",5);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |             [32m[KposePublisherObejct[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In member function ‘[01m[Kvoid nodeKeyboardCommand::key_loop()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:116:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kclamp[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  116 |                 grip_pose = std::[01;31m[Kclamp[m[K(grip_pose, 0.0, 0.1);
+      |                                  [01;31m[K^~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:124:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kdirt_pose[m[K’ was not declared in this scope; did you mean ‘[01m[Kdirty_pose[m[K’?
+  124 |                 if ([01;31m[Kdirt_pose[m[K == true)
+      |                     [01;31m[K^~~~~~~~~[m[K
+      |                     [32m[Kdirty_pose[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:126:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kx[m[K’
+  126 |                     pose_message.[01;31m[Kx[m[K = x_pose;
+      |                                  [01;31m[K^[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:127:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kx[m[K’
+  127 |                     pose_message.[01;31m[Kx[m[K = y_pose;
+      |                                  [01;31m[K^[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:128:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct geometry_msgs::msg::Pose_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kz[m[K’
+  128 |                     pose_message.[01;31m[Kz[m[K = z_pose;
+      |                                  [01;31m[K^[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:129:21:[m[K [01;31m[Kerror: [m[K‘[01m[KposePublisherObject[m[K’ was not declared in this scope; did you mean ‘[01m[KposePublisherObejct[m[K’?
+  129 |                     [01;31m[KposePublisherObject[m[K->publish(pose_message);
+      |                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                     [32m[KposePublisherObejct[m[K
+make[2]: *** [CMakeFiles/nodeGripTester.dir/build.make:63: CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nodeGripTester.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

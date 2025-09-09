@@ -1,0 +1,96 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.8"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "keyboard_control",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "keyboard_control_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-keyboard_control_uninstall-6611526dcf05445b2aba.json",
+					"name" : "keyboard_control_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodeJointControl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodeJointControl-e3952e08b92bbdcb487a.json",
+					"name" : "nodeJointControl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodePositionControl1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodePositionControl1-a9509029caa157e881a5.json",
+					"name" : "nodePositionControl1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodePositionControl2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodePositionControl2-c225744e0c54556446f7.json",
+					"name" : "nodePositionControl2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fa4e12819949923d1edb.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control",
+		"source" : "/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

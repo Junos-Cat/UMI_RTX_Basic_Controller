@@ -1,0 +1,9 @@
+[35m[1mScanning dependencies of target nodeGripTester[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In member function ‘[01m[Kvoid nodeKeyboardCommand::key_loop()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:116:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kclamp[m[K’ is not a member of ‘[01m[Kstd[m[K’
+  116 |                 grip_pose = std::[01;31m[Kclamp[m[K(grip_pose, 0.0, 0.1);
+      |                                  [01;31m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/nodeGripTester.dir/build.make:63: CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nodeGripTester.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

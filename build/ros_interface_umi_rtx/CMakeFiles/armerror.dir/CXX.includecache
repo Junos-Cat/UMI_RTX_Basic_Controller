@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/include/ros_interface_umi_rtx/umi-drivers/rtx.h
+
+/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp
+ros_interface_umi_rtx/umi-drivers/rtx.h
+-
+stdio.h
+-
+
+/home/Stage/LAB42_RTX_control/build/ros_interface_umi_rtx/armerror_autogen/mocs_compilation.cpp
+

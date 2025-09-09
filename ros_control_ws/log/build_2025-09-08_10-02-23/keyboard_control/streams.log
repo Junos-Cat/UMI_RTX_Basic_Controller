@@ -1,0 +1,11 @@
+[0.012s] Invoking command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8
+[0.063s] [35m[1mScanning dependencies of target nodeGripTester[0m
+[0.088s] [ 50%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m
+[0.280s] [01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:15:10:[m[K [01;31m[Kfatal error: [m[Kgeometry_msgs/msg/Pose.hpp: No such file or directory
+[0.280s]    15 | #include [01;31m[K"geometry_msgs/msg/Pose.hpp"[m[K
+[0.280s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.280s] compilation terminated.
+[0.283s] make[2]: *** [CMakeFiles/nodeGripTester.dir/build.make:63: CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o] Error 1
+[0.283s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nodeGripTester.dir/all] Error 2
+[0.283s] make: *** [Makefile:141: all] Error 2
+[0.286s] Invoked command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8

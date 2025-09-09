@@ -1,0 +1,4 @@
+source;share/yumi_manual_control/local_setup.bash
+source;share/yumi_manual_control/local_setup.dsv
+source;share/yumi_manual_control/local_setup.sh
+source;share/yumi_manual_control/local_setup.zsh

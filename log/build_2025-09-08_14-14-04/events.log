@@ -1,0 +1,47 @@
+[0.000000] (-) TimerEvent: {}
+[0.000130] (-) JobUnselected: {'identifier': 'ros_interface_umi_rtx'}
+[0.000159] (-) JobUnselected: {'identifier': 'yumi_manual_control'}
+[0.000180] (keyboard_control) JobQueued: {'identifier': 'keyboard_control', 'dependencies': OrderedDict()}
+[0.000209] (keyboard_control) JobStarted: {'identifier': 'keyboard_control'}
+[0.010562] (keyboard_control) JobProgress: {'identifier': 'keyboard_control', 'progress': 'cmake'}
+[0.011277] (keyboard_control) JobProgress: {'identifier': 'keyboard_control', 'progress': 'build'}
+[0.012233] (keyboard_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/Stage/LAB42_RTX_control/build/keyboard_control', '--', '-j8', '-l8'], 'cwd': '/home/Stage/LAB42_RTX_control/build/keyboard_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('USER', 'root'), ('HOSTNAME', 'ee3eb7aeb919'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/ros/foxy/lib:/opt/ros/foxy/opt/rviz_ogre_vendor:/opt/ros/foxy/opt/aml_cpp_vendor'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('CUDA_VERSION', '11.4.2'), ('COLCON_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install'), ('ROS_DISTRO', 'foxy'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=460,driver<461'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility,graphics,compat32,utility,compute,video,utility,graphics'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ros/foxy/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install/yumi_manual_control:/home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx:/home/Stage/LAB42_RTX_control/install/keyboard_control:/opt/ros/foxy'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/home/Stage/LAB42_RTX_control/build/keyboard_control'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install/yumi_manual_control:/home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx:/home/Stage/LAB42_RTX_control/install/keyboard_control:/opt/ros/foxy')]), 'shell': False}
+[0.065468] (keyboard_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target nodeGripTester\x1b[0m\n'}
+[0.089757] (keyboard_control) StdoutLine: {'line': b'[ 50%] Built target nodeKeyboardControl\n'}
+[0.092574] (keyboard_control) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o\x1b[0m\n'}
+[0.098607] (-) TimerEvent: {}
+[0.198920] (-) TimerEvent: {}
+[0.299305] (-) TimerEvent: {}
+[0.399581] (-) TimerEvent: {}
+[0.500062] (-) TimerEvent: {}
+[0.600493] (-) TimerEvent: {}
+[0.700773] (-) TimerEvent: {}
+[0.801087] (-) TimerEvent: {}
+[0.901367] (-) TimerEvent: {}
+[1.001637] (-) TimerEvent: {}
+[1.101923] (-) TimerEvent: {}
+[1.202273] (-) TimerEvent: {}
+[1.302581] (-) TimerEvent: {}
+[1.328774] (keyboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid nodeKeyboardCommand::key_loop()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.328983] (keyboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:184:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kgrip_message\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.329108] (keyboard_control) StderrLine: {'line': b'  184 |                     \x1b[01;31m\x1b[Kgrip_message\x1b[m\x1b[K.data = grip_pose;\n'}
+[1.329173] (keyboard_control) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.331505] (keyboard_control) StderrLine: {'line': b'\x1b[01m\x1b[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:190:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpose_message\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.331599] (keyboard_control) StderrLine: {'line': b'  190 |                     \x1b[01;31m\x1b[Kpose_message\x1b[m\x1b[K.position.x = x_pose;\n'}
+[1.331660] (keyboard_control) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.402698] (-) TimerEvent: {}
+[1.502984] (-) TimerEvent: {}
+[1.603324] (-) TimerEvent: {}
+[1.703645] (-) TimerEvent: {}
+[1.803934] (-) TimerEvent: {}
+[1.904273] (-) TimerEvent: {}
+[2.004562] (-) TimerEvent: {}
+[2.104849] (-) TimerEvent: {}
+[2.205171] (-) TimerEvent: {}
+[2.305458] (-) TimerEvent: {}
+[2.378018] (keyboard_control) StderrLine: {'line': b'make[2]: *** [CMakeFiles/nodeGripTester.dir/build.make:63: CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o] Error 1\n'}
+[2.378271] (keyboard_control) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/nodeGripTester.dir/all] Error 2\n'}
+[2.378440] (keyboard_control) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[2.381087] (keyboard_control) CommandEnded: {'returncode': 2}
+[2.392870] (keyboard_control) JobEnded: {'identifier': 'keyboard_control', 'rc': 2}
+[2.403491] (-) EventReactorShutdown: {}

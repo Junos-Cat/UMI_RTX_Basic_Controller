@@ -1,0 +1,25 @@
+[35m[1mScanning dependencies of target nodeGripTester[0m
+[ 50%] Built target nodeKeyboardControl
+[ 75%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m
+[100%] [32m[1mLinking CXX executable nodeGripTester[0m
+[100%] Built target nodeGripTester
+-- Install configuration: ""
+-- Installing: /home/Stage/LAB42_RTX_control/install/keyboard_control/lib/keyboard_control/nodeGripTester
+-- Set runtime path of "/home/Stage/LAB42_RTX_control/install/keyboard_control/lib/keyboard_control/nodeGripTester" to ""
+-- Installing: /home/Stage/LAB42_RTX_control/install/keyboard_control/lib/keyboard_control/nodeKeyboardControl
+-- Set runtime path of "/home/Stage/LAB42_RTX_control/install/keyboard_control/lib/keyboard_control/nodeKeyboardControl" to ""
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/ament_index/resource_index/package_run_dependencies/keyboard_control
+-- Installing: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/ament_index/resource_index/parent_prefix_path/keyboard_control
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.sh
+-- Installing: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/environment/path.sh
+-- Installing: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/environment/path.dsv
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/local_setup.bash
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/local_setup.sh
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/local_setup.zsh
+-- Installing: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/local_setup.dsv
+-- Installing: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/package.dsv
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/ament_index/resource_index/packages/keyboard_control
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig.cmake
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig-version.cmake
+-- Up-to-date: /home/Stage/LAB42_RTX_control/install/keyboard_control/share/keyboard_control/package.xml

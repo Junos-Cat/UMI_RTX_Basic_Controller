@@ -37,8 +37,8 @@ find_package(rviz_common REQUIRED)
 find_package(rviz_rendering REQUIRED)
 find_package(rviz_default_plugins REQUIRED)
 find_package(rviz_ogre_vendor REQUIRED)
-find_package(ZED 3 REQUIRED)
-find_package(CUDA ${ZED_CUDA_VERSION} REQUIRED)
+#find_package(ZED 3 REQUIRED)
+#find_package(CUDA ${ZED_CUDA_VERSION} REQUIRED)
 
 
 include_directories(
@@ -67,46 +67,46 @@ target_include_directories(armerror PUBLIC
   $<INSTALL_INTERFACE:include>)
 
   ##################################### Node camera
- add_executable(nodeCamera
- src/node_camera.cpp
- )
+# add_executable(nodeCamera
+# src/node_camera.cpp
+# )
  
- ament_target_dependencies(nodeCamera
- rclcpp
- sensor_msgs
- OpenCV
- cv_bridge
- geometry_msgs
- ament_index_cpp
- std_msgs
- )
+# ament_target_dependencies(nodeCamera
+# rclcpp
+# sensor_msgs
+# OpenCV
+# cv_bridge
+# geometry_msgs
+# ament_index_cpp
+# std_msgs
+# )
 
- target_link_libraries(nodeCamera "${cpp_typesupport_target}" ${OpenCV_LIBS})
- target_include_directories(nodeCamera PUBLIC
-$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-$<INSTALL_INTERFACE:include>)
+# target_link_libraries(nodeCamera "${cpp_typesupport_target}" ${OpenCV_LIBS})
+# target_include_directories(nodeCamera PUBLIC
+#$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+#$<INSTALL_INTERFACE:include>)
 
 ##################################### Node camera API
-add_executable(nodeCameraAPI
-        src/node_camera_API.cpp
-        )
+#add_executable(nodeCameraAPI
+#        src/node_camera_API.cpp
+#        )
 
-ament_target_dependencies(nodeCameraAPI
-        rclcpp
-        sensor_msgs
-        OpenCV
-        cv_bridge
-        geometry_msgs
-        ament_index_cpp
-        std_msgs
-        ZED
-        CUDA
-        )
+#ament_target_dependencies(nodeCameraAPI
+#        rclcpp
+#        sensor_msgs
+#        OpenCV
+#        cv_bridge
+#        geometry_msgs
+#        ament_index_cpp
+#        std_msgs
+#        ZED
+#        CUDA
+#        )
 
-target_link_libraries(nodeCameraAPI "${cpp_typesupport_target}" ${OpenCV_LIBS} ${ZED_LIBRARY_DIR} ${CUDA_LIBRARY_DIRS})
-target_include_directories(nodeCameraAPI PUBLIC
-        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-        $<INSTALL_INTERFACE:include>)
+#target_link_libraries(nodeCameraAPI "${cpp_typesupport_target}" ${OpenCV_LIBS} ${ZED_LIBRARY_DIR} ${CUDA_LIBRARY_DIRS})
+#target_include_directories(nodeCameraAPI PUBLIC
+#        $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+#        $<INSTALL_INTERFACE:include>)
 
  ##################################### Node Arm
 add_executable(nodeArm
@@ -216,7 +216,10 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(TARGETS nodeCamera nodeArm nodeInverseKinematics nodeSimu GUI nodeCameraAPI
+#install(TARGETS nodeCamera nodeArm nodeInverseKinematics nodeSimu GUI nodeCameraAPI
+#DESTINATION lib/${PROJECT_NAME})
+
+install(TARGETS nodeArm nodeInverseKinematics nodeSimu GUI
 DESTINATION lib/${PROJECT_NAME})
 
 install(DIRECTORY include

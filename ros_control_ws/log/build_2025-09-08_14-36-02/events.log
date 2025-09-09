@@ -1,0 +1,108 @@
+[0.000000] (-) TimerEvent: {}
+[0.000773] (-) JobUnselected: {'identifier': 'yumi_manual_control'}
+[0.000843] (keyboard_control) JobQueued: {'identifier': 'keyboard_control', 'dependencies': OrderedDict()}
+[0.000896] (keyboard_control) JobStarted: {'identifier': 'keyboard_control'}
+[0.010674] (keyboard_control) JobProgress: {'identifier': 'keyboard_control', 'progress': 'cmake'}
+[0.028074] (keyboard_control) JobProgress: {'identifier': 'keyboard_control', 'progress': 'build'}
+[0.029117] (keyboard_control) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control', '--', '-j8', '-l8'], 'cwd': '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('USER', 'root'), ('HOSTNAME', 'ee3eb7aeb919'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/ros/foxy/lib:/opt/ros/foxy/opt/rviz_ogre_vendor:/opt/ros/foxy/opt/aml_cpp_vendor'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('OLDPWD', '/home/Stage/LAB42_RTX_control'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('CUDA_VERSION', '11.4.2'), ('COLCON_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install'), ('ROS_DISTRO', 'foxy'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=460,driver<461'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility,graphics,compat32,utility,compute,video,utility,graphics'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ros/foxy/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install/yumi_manual_control:/home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx:/home/Stage/LAB42_RTX_control/install/keyboard_control:/opt/ros/foxy'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install/yumi_manual_control:/home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx:/home/Stage/LAB42_RTX_control/install/keyboard_control:/opt/ros/foxy')]), 'shell': False}
+[0.099914] (-) TimerEvent: {}
+[0.111299] (keyboard_control) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.12 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.136494] (keyboard_control) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.199990] (-) TimerEvent: {}
+[0.300295] (-) TimerEvent: {}
+[0.375013] (keyboard_control) StdoutLine: {'line': b'-- Found rclcpp: 2.4.3 (/opt/ros/foxy/share/rclcpp/cmake)\n'}
+[0.400468] (-) TimerEvent: {}
+[0.450026] (keyboard_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.454282] (keyboard_control) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.3.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.500556] (-) TimerEvent: {}
+[0.600847] (-) TimerEvent: {}
+[0.601432] (keyboard_control) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.648639] (keyboard_control) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 1.0.4 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)\n'}
+[0.650047] (keyboard_control) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.700949] (-) TimerEvent: {}
+[0.782481] (keyboard_control) StdoutLine: {'line': b'-- Found geometry_msgs: 2.0.5 (/opt/ros/foxy/share/geometry_msgs/cmake)\n'}
+[0.801075] (-) TimerEvent: {}
+[0.814576] (keyboard_control) StdoutLine: {'line': b'-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)\n'}
+[0.901180] (-) TimerEvent: {}
+[0.945381] (keyboard_control) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.961990] (keyboard_control) StdoutLine: {'line': b'-- Generating done\n'}
+[0.969416] (keyboard_control) StdoutLine: {'line': b'-- Build files have been written to: /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control\n'}
+[0.998979] (keyboard_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target nodeKeyboardJointControl\x1b[0m\n'}
+[0.999168] (keyboard_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target nodeKeyboardControl\x1b[0m\n'}
+[1.000506] (keyboard_control) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target nodeGripTester\x1b[0m\n'}
+[1.001252] (-) TimerEvent: {}
+[1.036005] (keyboard_control) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/nodeKeyboardControl.dir/src/keyboard_control.cpp.o\x1b[0m\n'}
+[1.036554] (keyboard_control) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/nodeKeyboardJointControl.dir/src/keyboard_joint_control.cpp.o\x1b[0m\n'}
+[1.040022] (keyboard_control) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o\x1b[0m\n'}
+[1.101384] (-) TimerEvent: {}
+[1.201683] (-) TimerEvent: {}
+[1.301972] (-) TimerEvent: {}
+[1.402270] (-) TimerEvent: {}
+[1.502576] (-) TimerEvent: {}
+[1.602873] (-) TimerEvent: {}
+[1.703212] (-) TimerEvent: {}
+[1.803532] (-) TimerEvent: {}
+[1.903846] (-) TimerEvent: {}
+[2.004146] (-) TimerEvent: {}
+[2.104440] (-) TimerEvent: {}
+[2.204826] (-) TimerEvent: {}
+[2.305104] (-) TimerEvent: {}
+[2.405435] (-) TimerEvent: {}
+[2.505711] (-) TimerEvent: {}
+[2.606050] (-) TimerEvent: {}
+[2.706337] (-) TimerEvent: {}
+[2.806632] (-) TimerEvent: {}
+[2.906929] (-) TimerEvent: {}
+[3.007346] (-) TimerEvent: {}
+[3.107660] (-) TimerEvent: {}
+[3.207956] (-) TimerEvent: {}
+[3.308282] (-) TimerEvent: {}
+[3.408609] (-) TimerEvent: {}
+[3.508945] (-) TimerEvent: {}
+[3.609245] (-) TimerEvent: {}
+[3.709534] (-) TimerEvent: {}
+[3.809844] (-) TimerEvent: {}
+[3.910134] (-) TimerEvent: {}
+[4.010428] (-) TimerEvent: {}
+[4.018364] (keyboard_control) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable nodeKeyboardJointControl\x1b[0m\n'}
+[4.110656] (-) TimerEvent: {}
+[4.211140] (-) TimerEvent: {}
+[4.218067] (keyboard_control) StdoutLine: {'line': b'[ 66%] Built target nodeKeyboardJointControl\n'}
+[4.311244] (-) TimerEvent: {}
+[4.411539] (-) TimerEvent: {}
+[4.511847] (-) TimerEvent: {}
+[4.612163] (-) TimerEvent: {}
+[4.652926] (keyboard_control) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable nodeGripTester\x1b[0m\n'}
+[4.712264] (-) TimerEvent: {}
+[4.757972] (keyboard_control) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable nodeKeyboardControl\x1b[0m\n'}
+[4.812388] (-) TimerEvent: {}
+[4.859840] (keyboard_control) StdoutLine: {'line': b'[100%] Built target nodeGripTester\n'}
+[4.912491] (-) TimerEvent: {}
+[4.977296] (keyboard_control) StdoutLine: {'line': b'[100%] Built target nodeKeyboardControl\n'}
+[4.990183] (keyboard_control) CommandEnded: {'returncode': 0}
+[4.991089] (keyboard_control) JobProgress: {'identifier': 'keyboard_control', 'progress': 'install'}
+[5.002845] (keyboard_control) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control'], 'cwd': '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LIBRARY_PATH', '/usr/local/cuda/lib64/stubs'), ('NV_LIBCUBLAS_VERSION', '11.6.1.51-1'), ('NV_CUDA_COMPAT_PACKAGE', 'cuda-compat-11-4'), ('USER', 'root'), ('HOSTNAME', 'ee3eb7aeb919'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/lib/x86_64-linux-gnu:/usr/lib/i386-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64:/opt/ros/foxy/lib:/opt/ros/foxy/opt/rviz_ogre_vendor:/opt/ros/foxy/opt/aml_cpp_vendor'), ('NV_LIBNCCL_PACKAGE_VERSION', '2.11.4-1'), ('HOME', '/root'), ('OLDPWD', '/home/Stage/LAB42_RTX_control'), ('NV_LIBCUBLAS_DEV_VERSION', '11.6.1.51-1'), ('ROS_PYTHON_VERSION', '3'), ('LC_CTYPE', 'C.UTF-8'), ('NV_LIBNCCL_DEV_PACKAGE_VERSION', '2.11.4-1'), ('NV_LIBNPP_PACKAGE', 'libnpp-11-4=11.4.0.110-1'), ('CUDA_VERSION', '11.4.2'), ('COLCON_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install'), ('ROS_DISTRO', 'foxy'), ('NV_LIBCUBLAS_PACKAGE_NAME', 'libcublas-11-4'), ('NVIDIA_REQUIRE_CUDA', 'cuda>=11.4 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 brand=tesla,driver>=450,driver<451 brand=tesla,driver>=460,driver<461'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NV_LIBCUSPARSE_VERSION', '11.6.0.120-1'), ('NVIDIA_DRIVER_CAPABILITIES', 'compute,utility,graphics,compat32,utility,compute,video,utility,graphics'), ('NV_CUDA_LIB_VERSION', '11.4.2-1'), ('NV_LIBNCCL_PACKAGE_NAME', 'libnccl2'), ('NV_NVML_DEV_VERSION', '11.4.120-1'), ('NV_LIBNPP_DEV_PACKAGE', 'libnpp-dev-11-4=11.4.0.110-1'), ('TERM', 'xterm'), ('NV_CUDA_CUDART_VERSION', '11.4.108-1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/ros/foxy/bin'), ('NV_LIBCUBLAS_DEV_PACKAGE_NAME', 'libcublas-dev-11-4'), ('NV_LIBCUBLAS_PACKAGE', 'libcublas-11-4=11.6.1.51-1'), ('NVARCH', 'x86_64'), ('NV_LIBNCCL_DEV_PACKAGE_NAME', 'libnccl-dev'), ('NV_LIBCUSPARSE_DEV_VERSION', '11.6.0.120-1'), ('DISPLAY', ':0'), ('NV_LIBNCCL_PACKAGE', 'libnccl2=2.11.4-1+cuda11.4'), ('NV_CUDA_CUDART_DEV_VERSION', '11.4.108-1'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install/yumi_manual_control:/home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx:/home/Stage/LAB42_RTX_control/install/keyboard_control:/opt/ros/foxy'), ('NV_LIBCUBLAS_DEV_PACKAGE', 'libcublas-dev-11-4=11.6.1.51-1'), ('NV_LIBNCCL_DEV_PACKAGE', 'libnccl-dev=2.11.4-1+cuda11.4'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('NV_NVTX_VERSION', '11.4.120-1'), ('NV_LIBNPP_VERSION', '11.4.0.110-1'), ('PWD', '/home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('NCCL_VERSION', '2.11.4-1'), ('COLCON', '1'), ('NV_LIBNPP_DEV_VERSION', '11.4.0.110-1'), ('CMAKE_PREFIX_PATH', '/home/Stage/LAB42_RTX_control/install/yumi_manual_control:/home/Stage/LAB42_RTX_control/install/ros_interface_umi_rtx:/home/Stage/LAB42_RTX_control/install/keyboard_control:/opt/ros/foxy')]), 'shell': False}
+[5.012618] (-) TimerEvent: {}
+[5.013541] (keyboard_control) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.013798] (keyboard_control) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/lib/keyboard_control/nodeGripTester\n'}
+[5.015024] (keyboard_control) StdoutLine: {'line': b'-- Set runtime path of "/home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/lib/keyboard_control/nodeGripTester" to ""\n'}
+[5.015198] (keyboard_control) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/lib/keyboard_control/nodeKeyboardControl\n'}
+[5.016294] (keyboard_control) StdoutLine: {'line': b'-- Set runtime path of "/home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/lib/keyboard_control/nodeKeyboardControl" to ""\n'}
+[5.016446] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/ament_index/resource_index/package_run_dependencies/keyboard_control\n'}
+[5.016561] (keyboard_control) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/ament_index/resource_index/parent_prefix_path/keyboard_control\n'}
+[5.016783] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.sh\n'}
+[5.017006] (keyboard_control) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/environment/ament_prefix_path.dsv\n'}
+[5.017221] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/environment/path.sh\n'}
+[5.017371] (keyboard_control) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/environment/path.dsv\n'}
+[5.017525] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/local_setup.bash\n'}
+[5.017643] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/local_setup.sh\n'}
+[5.017764] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/local_setup.zsh\n'}
+[5.017842] (keyboard_control) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/local_setup.dsv\n'}
+[5.017946] (keyboard_control) StdoutLine: {'line': b'-- Installing: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/package.dsv\n'}
+[5.018163] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/ament_index/resource_index/packages/keyboard_control\n'}
+[5.018261] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig.cmake\n'}
+[5.018365] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/cmake/keyboard_controlConfig-version.cmake\n'}
+[5.018461] (keyboard_control) StdoutLine: {'line': b'-- Up-to-date: /home/Stage/LAB42_RTX_control/ros_control_ws/install/keyboard_control/share/keyboard_control/package.xml\n'}
+[5.020937] (keyboard_control) CommandEnded: {'returncode': 0}
+[5.038171] (keyboard_control) JobEnded: {'identifier': 'keyboard_control', 'rc': 0}
+[5.039071] (-) EventReactorShutdown: {}

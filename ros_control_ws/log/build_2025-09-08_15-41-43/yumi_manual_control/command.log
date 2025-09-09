@@ -1,0 +1,1 @@
+Invoking command in '/home/Stage/LAB42_RTX_control/ros_control_ws/build/yumi_manual_control': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/foxy /usr/bin/cmake /home/Stage/LAB42_RTX_control/ros_control_ws/src/yumi_manual_control -DCMAKE_INSTALL_PREFIX=/home/Stage/LAB42_RTX_control/ros_control_ws/install/yumi_manual_control

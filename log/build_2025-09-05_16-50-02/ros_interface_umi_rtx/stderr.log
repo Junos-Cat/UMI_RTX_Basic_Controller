@@ -1,0 +1,408 @@
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:[m[K In function ‘[01m[Kchar* armstrerror(int)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:56:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   56 |  return [01;35m[K"Communication failure"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:58:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   58 |  return [01;35m[K"Communication not initialised"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:62:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   62 |  return [01;35m[K"No response"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:64:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   64 |  return [01;35m[K"Too many bytes in response"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:66:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   66 |  return [01;35m[K"Not enough bytes in response"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:68:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   68 |  return [01;35m[K"Unexpected response"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:73:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   73 |  return [01;35m[K"Reserved for future ROM releases"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:75:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   75 |  return [01;35m[K"Axis busy, wait until axis is stopped"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:77:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   77 |  return [01;35m[K"IP command decoder busy, try again later"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:79:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   79 |  return [01;35m[K"Parameter out of range"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:83:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   83 |  return [01;35m[K"Read only variable"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:86:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   86 |  return [01;35m[K"Selection out of range"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:89:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   89 |  return [01;35m[K"Illegal command"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:91:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   91 |  return [01;35m[K"Not enough bytes in command"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:93:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   93 |  return [01;35m[K"Too many bytes in command"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:95:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   95 |  return [01;35m[K"Parity error"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:97:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   97 |  return [01;35m[K"The IP was restarted. restart"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:100:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  100 |  return [01;35m[K"Checksum error"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:102:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  102 |  return [01;35m[K"Parameter out of range"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:104:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  104 |  return [01;35m[K"Toggle mode off (must be on for arm_interpolate)"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:106:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  106 |  return [01;35m[K"Privileged command"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:108:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  108 |  return [01;35m[K"RTX in use"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:110:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  110 |  return [01;35m[K"Command not supported"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:112:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  112 |  return [01;35m[K"Cannot connect to daemon"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:114:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  114 |  return [01;35m[K"Lost connection to RTX daemon"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:116:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  116 |  return [01;35m[K"Connection read-only"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:[m[K In function ‘[01m[Kvoid freertx(int, void*)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:90:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   90 | static void freertx([01;35m[Kint status[m[K, void *arg)
+      |                     [01;35m[K~~~~^~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:90:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   90 | static void freertx(int status, [01;35m[Kvoid *arg[m[K)
+      |                                 [01;35m[K~~~~~~^~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:[m[K In function ‘[01m[Kchar* rtxstrcommand(int)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:449:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  449 |         return [01;35m[K"RTX_CMD_FIRST"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:451:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  451 |         return [01;35m[K"RTX_CMD_QUIT"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:453:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  453 |         return [01;35m[K"RTX_CMD_ABORT"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:455:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  455 |         return [01;35m[K"RTX_CMD_GET_NCON"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:457:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  457 |         return [01;35m[K"RTX_CMD_GET_CON"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:459:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  459 |         return [01;35m[K"RTX_CMD_GET_CON"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:461:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  461 |         return [01;35m[K"RTX_CMD_PRIV"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:463:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  463 |         return [01;35m[K"RTX_CMD_READ_WRITE"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:465:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  465 |         return [01;35m[K"RTX_CMD_READ_ONLY"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:467:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  467 |         return [01;35m[K"RTX_CMD_GET_PARAMS"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:469:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  469 |         return [01;35m[K"RTX_CMD_SET_PARAMS"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:473:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  473 |         return [01;35m[K"RTX_CMD_RAW"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:475:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  475 |         return [01;35m[K"RTX_CMD_RESTART"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:477:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  477 |         return [01;35m[K"RTX_CMD_DEFINE_HOME"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:479:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  479 |         return [01;35m[K"RTX_CMD_RELOAD_PIDS"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:481:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  481 |         return [01;35m[K"RTX_CMD_SET_MODE"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:483:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  483 |         return [01;35m[K"RTX_CMD_STOP"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:485:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  485 |         return [01;35m[K"RTX_CMD_GO"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:487:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  487 |         return [01;35m[K"RTX_CMD_WRITE"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:489:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  489 |         return [01;35m[K"RTX_CMD_INTERPOLATE"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:491:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  491 |         return [01;35m[K"RTX_CMD_SOAK"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:493:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  493 |         return [01;35m[K"RTX_CMD_INIT"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:498:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  498 |         return [01;35m[K"RTX_CMD_STATUS"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:[m[K In function ‘[01m[Kchar* armstrerror(int)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:56:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   56 |  return [01;35m[K"Communication failure"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:58:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   58 |  return [01;35m[K"Communication not initialised"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:62:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   62 |  return [01;35m[K"No response"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:64:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   64 |  return [01;35m[K"Too many bytes in response"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:66:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   66 |  return [01;35m[K"Not enough bytes in response"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:68:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   68 |  return [01;35m[K"Unexpected response"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:73:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   73 |  return [01;35m[K"Reserved for future ROM releases"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:75:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   75 |  return [01;35m[K"Axis busy, wait until axis is stopped"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:77:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   77 |  return [01;35m[K"IP command decoder busy, try again later"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:79:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   79 |  return [01;35m[K"Parameter out of range"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:83:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   83 |  return [01;35m[K"Read only variable"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:86:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   86 |  return [01;35m[K"Selection out of range"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:89:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   89 |  return [01;35m[K"Illegal command"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:91:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   91 |  return [01;35m[K"Not enough bytes in command"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:93:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   93 |  return [01;35m[K"Too many bytes in command"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:95:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   95 |  return [01;35m[K"Parity error"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:97:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+   97 |  return [01;35m[K"The IP was restarted. restart"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:100:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  100 |  return [01;35m[K"Checksum error"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:102:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  102 |  return [01;35m[K"Parameter out of range"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:104:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  104 |  return [01;35m[K"Toggle mode off (must be on for arm_interpolate)"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:106:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  106 |  return [01;35m[K"Privileged command"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:108:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  108 |  return [01;35m[K"RTX in use"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:110:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  110 |  return [01;35m[K"Command not supported"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:112:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  112 |  return [01;35m[K"Cannot connect to daemon"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:114:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  114 |  return [01;35m[K"Lost connection to RTX daemon"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armerror.cpp:116:9:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  116 |  return [01;35m[K"Connection read-only"[m[K;
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:[m[K In function ‘[01m[Kvoid freertx(int, void*)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:90:25:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstatus[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   90 | static void freertx([01;35m[Kint status[m[K, void *arg)
+      |                     [01;35m[K~~~~^~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:90:39:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   90 | static void freertx(int status, [01;35m[Kvoid *arg[m[K)
+      |                                 [01;35m[K~~~~~~^~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:[m[K In function ‘[01m[Kchar* rtxstrcommand(int)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:449:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  449 |         return [01;35m[K"RTX_CMD_FIRST"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:451:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  451 |         return [01;35m[K"RTX_CMD_QUIT"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:453:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  453 |         return [01;35m[K"RTX_CMD_ABORT"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:455:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  455 |         return [01;35m[K"RTX_CMD_GET_NCON"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:457:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  457 |         return [01;35m[K"RTX_CMD_GET_CON"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:459:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  459 |         return [01;35m[K"RTX_CMD_GET_CON"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:461:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  461 |         return [01;35m[K"RTX_CMD_PRIV"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:463:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  463 |         return [01;35m[K"RTX_CMD_READ_WRITE"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:465:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  465 |         return [01;35m[K"RTX_CMD_READ_ONLY"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:467:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  467 |         return [01;35m[K"RTX_CMD_GET_PARAMS"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:469:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  469 |         return [01;35m[K"RTX_CMD_SET_PARAMS"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:473:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  473 |         return [01;35m[K"RTX_CMD_RAW"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:475:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  475 |         return [01;35m[K"RTX_CMD_RESTART"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:477:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  477 |         return [01;35m[K"RTX_CMD_DEFINE_HOME"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:479:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  479 |         return [01;35m[K"RTX_CMD_RELOAD_PIDS"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:481:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  481 |         return [01;35m[K"RTX_CMD_SET_MODE"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:483:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  483 |         return [01;35m[K"RTX_CMD_STOP"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:485:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  485 |         return [01;35m[K"RTX_CMD_GO"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:487:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  487 |         return [01;35m[K"RTX_CMD_WRITE"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:489:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  489 |         return [01;35m[K"RTX_CMD_INTERPOLATE"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:491:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  491 |         return [01;35m[K"RTX_CMD_SOAK"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:493:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  493 |         return [01;35m[K"RTX_CMD_INIT"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/armlib/armraw.cpp:498:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  498 |         return [01;35m[K"RTX_CMD_STATUS"[m[K;
+      |                [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:[m[K In function ‘[01m[Kvoid umi_init()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:122:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  122 |         char *temp=[01;35m[K"root"[m[K;
+      |                    [01;35m[K^~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:139:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  139 |                 armperror([01;35m[K"init connections "[m[K);
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:141:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  141 |                 armperror([01;35m[K"restart"[m[K);
+      |                           [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:144:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  144 |                 armperror([01;35m[K"enable PWM output"[m[K);
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:164:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  164 |                 armperror([01;35m[K"soak init"[m[K);
+      |                           [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:171:35:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  171 |                         armperror([01;35m[K"general_status"[m[K);
+      |                                   [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:[m[K In function ‘[01m[Kvoid umi_stop()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:186:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  186 |                 armperror([01;35m[K"tried FREE_STOP"[m[K);
+      |                           [01;35m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:191:27:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  191 |                 armperror([01;35m[K"tried FREE_OFF"[m[K);
+      |                           [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:[m[K In function ‘[01m[Kvoid umi_go()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:235:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  235 |   armperror([01;35m[K"position error with zed "[m[K);
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:238:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  238 |   armperror([01;35m[K"position error with sld "[m[K);
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:241:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  241 |   armperror([01;35m[K"position error with elb "[m[K);
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:244:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  244 |   armperror([01;35m[K"position error with yaw "[m[K);
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:247:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  247 |   armperror([01;35m[K"position error with wr1 "[m[K);
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:250:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  250 |   armperror([01;35m[K"position error with wr2 "[m[K);
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:253:13:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  253 |   armperror([01;35m[K"position error with grp "[m[K);
+      |             [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:261:43:[m[K [01;35m[Kwarning: [m[KISO C++ forbids converting a string constant to ‘[01m[Kchar*[m[K’ [[01;35m[K-Wwrite-strings[m[K]
+  261 |                                 armperror([01;35m[K"error with arm_go "[m[K);
+      |                                           [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:[m[K At global scope:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:80:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid print_status()[m[K’ declared ‘[01m[Kstatic[m[K’ but never defined [[01;35m[K-Wunused-function[m[K]
+   80 | static void [01;35m[Kprint_status[m[K(/*int status*/);
+      |             [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/drivers/umi/umicmds.cpp:358:13:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid print_status(int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+  358 | static void [01;35m[Kprint_status[m[K(int status)
+      |             [01;35m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:1[m[K:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/include/ros_interface_umi_rtx/main_gui.hpp:[m[K In constructor ‘[01m[KMainGUI::MainGUI(QApplication*, const std::shared_ptr<Objective_node>&, rviz_common::ros_integration::RosNodeAbstractionIface::WeakPtr, QWidget*)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/include/ros_interface_umi_rtx/main_gui.hpp:118:19:[m[K [01;35m[Kwarning: [m[K‘[01m[KMainGUI::app_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  118 |     QApplication* [01;35m[Kapp_[m[K;
+      |                   [01;35m[K^~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/include/ros_interface_umi_rtx/main_gui.hpp:116:38:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kconst std::shared_ptr<Objective_node> MainGUI::ros2_node[m[K’ [[01;35m[K-Wreorder[m[K]
+  116 |     const shared_ptr<Objective_node> [01;35m[Kros2_node[m[K;
+      |                                      [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:3:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+    3 | [01;35m[KMainGUI[m[K::MainGUI(QApplication * app,
+      | [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:1[m[K:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/include/ros_interface_umi_rtx/main_gui.hpp:128:68:[m[K [01;35m[Kwarning: [m[K‘[01m[KMainGUI::rviz_ros_node_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+  128 |     rviz_common::ros_integration::RosNodeAbstractionIface::WeakPtr [01;35m[Krviz_ros_node_[m[K;
+      |                                                                    [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:7:87:[m[K [01;35m[Kwarning: [m[K  base ‘[01m[KQMainWindow[m[K’ [[01;35m[K-Wreorder[m[K]
+    7 |   : app_(app), ros2_node(ros2_node), rviz_ros_node_(rviz_ros_node), QMainWindow(parent[01;35m[K)[m[K
+      |                                                                                       [01;35m[K^[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:3:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+    3 | [01;35m[KMainGUI[m[K::MainGUI(QApplication * app,
+      | [01;35m[K^~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:[m[K In member function ‘[01m[Kvirtual rviz_common::PanelDockWidget* MainGUI::addPane(const QString&, QWidget*, Qt::DockWidgetArea, bool)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:338:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kname[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  338 | MainGUI::addPane([01;35m[Kconst QString & name[m[K, QWidget * pane, Qt::DockWidgetArea area, bool floating)
+      |                  [01;35m[K~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:338:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kpane[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  338 | MainGUI::addPane(const QString & name, [01;35m[KQWidget * pane[m[K, Qt::DockWidgetArea area, bool floating)
+      |                                        [01;35m[K~~~~~~~~~~^~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:338:75:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Karea[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  338 | MainGUI::addPane(const QString & name, QWidget * pane, [01;35m[KQt::DockWidgetArea area[m[K, bool floating)
+      |                                                        [01;35m[K~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:338:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfloating[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  338 | MainGUI::addPane(const QString & name, QWidget * pane, Qt::DockWidgetArea area, [01;35m[Kbool floating[m[K)
+      |                                                                                 [01;35m[K~~~~~^~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:[m[K In member function ‘[01m[Kvirtual void MainGUI::setStatus(const QString&)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx/src/main_gui.cpp:344:36:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmessage[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  344 | MainGUI::setStatus([01;35m[Kconst QString & message[m[K)
+      |                    [01;35m[K~~~~~~~~~~~~~~~~^~~~~~~[m[K

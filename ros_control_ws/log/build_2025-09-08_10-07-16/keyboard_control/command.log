@@ -1,0 +1,2 @@
+Invoking command in '/home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control': /usr/bin/cmake --build /home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8
+Invoked command in '/home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control' returned '2': /usr/bin/cmake --build /home/roboticslab/Desktop/JUNO/LAB42_RTX_control/ros_control_ws/build/keyboard_control -- -j8 -l8

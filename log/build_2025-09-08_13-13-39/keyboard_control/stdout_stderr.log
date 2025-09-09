@@ -1,0 +1,22 @@
+[35m[1mScanning dependencies of target nodeGripTester[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o[0m
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In member function ‘[01m[Kvoid nodeKeyboardCommand::key_loop()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:184:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrip_message[m[K’ was not declared in this scope
+  184 |                     [01;31m[Kgrip_message[m[K.data = grip_pose;
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:190:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_message[m[K’ was not declared in this scope
+  190 |                     [01;31m[Kpose_message[m[K.position.x = x_pose;
+      |                     [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In lambda function:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:303:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyboard_node[m[K’ was not declared in this scope; did you mean ‘[01m[Kkeyboard_control[m[K’?
+  303 |     std::thread key_thread([&]() { [01;31m[Kkeyboard_node[m[K->key_loop(); });
+      |                                    [01;31m[K^~~~~~~~~~~~~[m[K
+      |                                    [32m[Kkeyboard_control[m[K
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/command_publisher.cpp:305:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kkeyboard_node[m[K’ was not declared in this scope; did you mean ‘[01m[Kkeyboard_control[m[K’?
+  305 |     rclcpp::spin([01;31m[Kkeyboard_node[m[K);
+      |                  [01;31m[K^~~~~~~~~~~~~[m[K
+      |                  [32m[Kkeyboard_control[m[K
+make[2]: *** [CMakeFiles/nodeGripTester.dir/build.make:63: CMakeFiles/nodeGripTester.dir/src/command_publisher.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nodeGripTester.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

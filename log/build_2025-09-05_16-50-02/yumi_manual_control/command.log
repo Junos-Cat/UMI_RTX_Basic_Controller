@@ -1,0 +1,6 @@
+Invoking command in '/home/Stage/LAB42_RTX_control/build/yumi_manual_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/Stage/LAB42_RTX_control/ros_control_ws/src/yumi_manual_control -DCMAKE_INSTALL_PREFIX=/home/Stage/LAB42_RTX_control/install/yumi_manual_control
+Invoked command in '/home/Stage/LAB42_RTX_control/build/yumi_manual_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake /home/Stage/LAB42_RTX_control/ros_control_ws/src/yumi_manual_control -DCMAKE_INSTALL_PREFIX=/home/Stage/LAB42_RTX_control/install/yumi_manual_control
+Invoking command in '/home/Stage/LAB42_RTX_control/build/yumi_manual_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/build/yumi_manual_control -- -j8 -l8
+Invoked command in '/home/Stage/LAB42_RTX_control/build/yumi_manual_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/Stage/LAB42_RTX_control/build/yumi_manual_control -- -j8 -l8
+Invoking command in '/home/Stage/LAB42_RTX_control/build/yumi_manual_control': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/Stage/LAB42_RTX_control/build/yumi_manual_control
+Invoked command in '/home/Stage/LAB42_RTX_control/build/yumi_manual_control' returned '0': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --install /home/Stage/LAB42_RTX_control/build/yumi_manual_control

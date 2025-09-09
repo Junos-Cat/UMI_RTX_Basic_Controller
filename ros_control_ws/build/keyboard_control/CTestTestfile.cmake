@@ -1,0 +1,6 @@
+# CMake generated Testfile for 
+# Source directory: /home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control
+# Build directory: /home/Stage/LAB42_RTX_control/ros_control_ws/build/keyboard_control
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

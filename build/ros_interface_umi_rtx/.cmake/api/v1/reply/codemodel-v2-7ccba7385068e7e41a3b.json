@@ -1,0 +1,195 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ros_interface_umi_rtx",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "GUI::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GUI-57ca219d45cccda7ece9.json",
+					"name" : "GUI",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GUI_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GUI_autogen-c967d87a50d8403fdb7d.json",
+					"name" : "GUI_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "armcmds::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armcmds-f468cb105934ea6f768a.json",
+					"name" : "armcmds",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "armcmds_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armcmds_autogen-a21c243739320d3caa4f.json",
+					"name" : "armcmds_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "armerror::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armerror-77146ed39028e0212237.json",
+					"name" : "armerror",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "armerror_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armerror_autogen-7037dce2a3ad8bf0e7b4.json",
+					"name" : "armerror_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "armraw::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armraw-e2edebecdd9c4112a931.json",
+					"name" : "armraw",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "armraw_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-armraw_autogen-00b529dd11a28f57ad4a.json",
+					"name" : "armraw_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodeArm::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodeArm-5aaa8b8dccc7dfe1c854.json",
+					"name" : "nodeArm",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodeArm_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodeArm_autogen-4cd4a570a426854cbedf.json",
+					"name" : "nodeArm_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodeInverseKinematics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodeInverseKinematics-ffbfbf1a27a6e35dbbec.json",
+					"name" : "nodeInverseKinematics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodeInverseKinematics_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodeInverseKinematics_autogen-5996655d737b58a4eb63.json",
+					"name" : "nodeInverseKinematics_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodeSimu::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodeSimu-cd693a0b9a32d2054de8.json",
+					"name" : "nodeSimu",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "nodeSimu_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-nodeSimu_autogen-39743229d74608c7b2d0.json",
+					"name" : "nodeSimu_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ros_interface_umi_rtx_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ros_interface_umi_rtx_uninstall-44501a72fe55fc071ceb.json",
+					"name" : "ros_interface_umi_rtx_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-dd67a53965507ababe19.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/Stage/LAB42_RTX_control/build/ros_interface_umi_rtx",
+		"source" : "/home/Stage/LAB42_RTX_control/ROS_ws/src/ros_interface_umi_rtx"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

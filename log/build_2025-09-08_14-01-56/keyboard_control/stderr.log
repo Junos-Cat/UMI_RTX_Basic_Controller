@@ -1,0 +1,8 @@
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/keyboard_control.cpp:[m[K In member function ‘[01m[Kvoid KeyboardArmControl::run()[m[K’:
+[01m[K/home/Stage/LAB42_RTX_control/ros_control_ws/src/keyboard_control/src/keyboard_control.cpp:30:22:[m[K [01;31m[Kerror: [m[K‘[01m[Kgetch[m[K’ was not declared in this scope; did you mean ‘[01m[Kgetc[m[K’?
+   30 |             char c = [01;31m[Kgetch[m[K();
+      |                      [01;31m[K^~~~~[m[K
+      |                      [32m[Kgetc[m[K
+make[2]: *** [CMakeFiles/nodeGripTester.dir/build.make:63: CMakeFiles/nodeGripTester.dir/src/keyboard_control.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/nodeGripTester.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

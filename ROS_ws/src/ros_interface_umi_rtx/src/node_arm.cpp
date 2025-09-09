@@ -47,6 +47,7 @@ void Arm_node::timer_callback(){
         roll = target_roll;
         grip = target_grip;
 
+	    //printf("setting motors\n");
         set_motors();
         arm_go(NUMERIC,0x1555);
     }
@@ -71,11 +72,19 @@ void Arm_node::get_pose(const geometry_msgs::msg::Pose::SharedPtr msg){
     target_yaw = msg->orientation.x*M_PI/180;
     target_pitch = msg->orientation.y*M_PI/180;
     target_roll = msg->orientation.z*M_PI/180;
+
+    /*printf("Ex: %f\n", msg->position.x);
+    printf("Ey: %f\n", msg->position.y);
+    printf("Ez: %f\n", msg->position.z);
+    printf("Qx: %f\n", msg->orientation.x);
+    printf("Qy: %f\n", msg->orientation.y);
+    printf("Qz: %f\n", msg->orientation.z);*/
 }
 
 void Arm_node::get_grip(const std_msgs::msg::Float32::SharedPtr msg){
     commands_motor[GRIP] = msg->data*1000;
     target_grip = msg->data;
+    //printf("Grip: %f\n", msg->data);
 }
 
 void Arm_node::set_motors(){
@@ -138,6 +147,7 @@ string Arm_node::params2msg(){
 
 int main(int argc, char *argv[]){
     rclcpp::init(argc,argv);
+    //printf("starting node\n");
     shared_ptr<rclcpp::Node> node = make_shared<Arm_node>();
 
     rclcpp::spin(node);

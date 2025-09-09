@@ -1,0 +1,16 @@
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/lib/yumi_manual_control/node_manual_arm
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/ament_index/resource_index/package_run_dependencies/yumi_manual_control
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/ament_index/resource_index/parent_prefix_path/yumi_manual_control
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/environment/ament_prefix_path.sh
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/environment/ament_prefix_path.dsv
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/environment/path.sh
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/environment/path.dsv
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/local_setup.bash
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/local_setup.sh
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/local_setup.zsh
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/local_setup.dsv
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/package.dsv
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/ament_index/resource_index/packages/yumi_manual_control
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/cmake/yumi_manual_controlConfig.cmake
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/cmake/yumi_manual_controlConfig-version.cmake
+/home/Stage/LAB42_RTX_control/install/yumi_manual_control/share/yumi_manual_control/package.xml
