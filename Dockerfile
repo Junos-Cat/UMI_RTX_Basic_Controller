@@ -35,8 +35,8 @@ RUN source ~/.bashrc
 RUN apt-get install git wget -y
 
 WORKDIR /home/Stage
-RUN git clone https://github.com/gardegu/LAB42_RTX_control.git
-WORKDIR /home/Stage/LAB42_RTX_control
+RUN git clone https://github.com/Junos-Cat/UMI_RTX_Basic_Controller
+WORKDIR /home/Stage/UMI_RTX_Basic_Controller
 RUN ./install_dependencies.sh
 RUN mkdir logs
 
@@ -45,5 +45,5 @@ RUN echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/foxy/lib:/opt/ros/fox
 RUN echo 'export PATH=$PATH:/opt/ros/foxy/bin' >> ~/.bashrc
 RUN echo 'export PYTHONPATH=$PYTHONPATH:/opt/ros/foxy/lib/python3.8/site-packages' >> ~/.bashrc
 
-WORKDIR /home/Stage/LAB42_RTX_control
+WORKDIR /home/Stage/UMI_RTX_Basic_Controller
 RUN apt install nano -y

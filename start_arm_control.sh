@@ -113,13 +113,13 @@ else
       # Run selected node interactively in foreground to get keyboard input
       case $choice in
         1)
-          ros2 run ros_interface_umi_rtx nodePositionControl1
+          ros2 run keyboard_control nodePositionControl1
           ;;
         2)
-          ros2 run ros_interface_umi_rtx nodePositionControl2
+          ros2 run keyboard_control nodePositionControl2
           ;;
         3)
-          ros2 run ros_interface_umi_rtx nodeJointControl
+          ros2 run keyboard_control nodeJointControl
           ;;
       esac
 
