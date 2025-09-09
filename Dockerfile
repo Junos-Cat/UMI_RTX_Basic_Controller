@@ -38,12 +38,7 @@ WORKDIR /home/Stage
 RUN git clone https://github.com/Junos-Cat/UMI_RTX_Basic_Controller
 WORKDIR /home/Stage/UMI_RTX_Basic_Controller
 
-RUN sudo apt update
-
-# Pinocchio for the inverse kinematics
-RUN sudo apt install ros-foxy-pinocchio -y
-RUN sudo apt install ros-foxy-xacro -y
-#RUN ./install_dependencies.sh
+RUN ./install_dependencies.sh
 RUN mkdir logs
 
 RUN apt install python3-colcon-common-extensions -y
