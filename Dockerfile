@@ -27,19 +27,25 @@ RUN apt upgrade -y
 
 RUN apt install ros-foxy-desktop python3-argcomplete -y
 
-
-RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc
-RUN source /opt/ros/foxy/setup.bash
-RUN source ~/.bashrc
-
 RUN apt-get install git wget -y
 
 WORKDIR /home/Stage
 RUN git clone https://github.com/Junos-Cat/UMI_RTX_Basic_Controller.git
 WORKDIR /home/Stage/UMI_RTX_Basic_Controller
 RUN ./install_dependencies.sh
+
 RUN mkdir logs
 
+WORKDIR /home/Stage/UMI_RTX_Basic_Controller/ROS_ws
+RUN /bin/bash -c "source /opt/ros/foxy/setup.bash && colcon build --symlink-install"
+
+WORKDIR /home/Stage/UMI_RTX_Basic_Controller/ros_control_ws
+RUN /bin/bash -c "source /opt/ros/foxy/setup.bash && colcon build --symlink-install"
+
+RUN echo "source /opt/ros/foxy/setup.bash" >> ~/.bashrc \
+ && echo "source /home/Stage/UMI_RTX_Basic_Controller/ROS_ws/install/setup.bash" >> ~/.bashrc \
+ && echo "source /home/Stage/UMI_RTX_Basic_Controller/ros_control_ws/install/setup.bash" >> ~/.bashrc
+ 
 RUN apt install python3-colcon-common-extensions -y
 RUN echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/ros/foxy/lib:/opt/ros/foxy/opt/rviz_ogre_vendor:/opt/ros/foxy/opt/aml_cpp_vendor' >> ~/.bashrc
 RUN echo 'export PATH=$PATH:/opt/ros/foxy/bin' >> ~/.bashrc
