@@ -67,7 +67,14 @@ To build your Docker image, you need a Dockerfile, which contains the instructio
 docker build -t my-image-name:latest .
 ```
 
+You may need to run it with elevated permissions as I did:
+```bash
+sudo docker build -t my-image-name:latest .
+```
+
 `.` means "build context is the current directory" so if you really want, you can replace this with the location to the aformentioned directory.
+
+This will take a while the first time around but subsequent builds will be shorter.
 
 2. Check your image
 To list your local images, from any directory, run:
@@ -79,11 +86,6 @@ You should see `my-image-name` in the list.
 
 3. Run a container from your image
 To run a container from your image, from any directory, run:
-```bash
-docker run -it my-image-name:latest
-```
-
-You may need to run it with elevated permissions as I did:
 ```bash
 sudo docker run -it my-image-name:latest --name yumi
 ```
@@ -97,6 +99,7 @@ sudo docker run -it \
     -v ~/Desktop/JUNO/LAB42_RTX_control/:/home/Stage/LAB42_RTX_control/ \
     my-image-name
 ```
+This means you won't have to rebuild the Docker image as often.
 
 4. Check your container
 You should now be able to see a list of running containers by running:
