@@ -87,7 +87,7 @@ You should see `my-image-name` in the list.
 3. Run a container from your image
 To run a container from your image, from any directory, run:
 ```bash
-sudo docker run -it my-image-name:latest --name yumi
+sudo docker run -it my-image-name --name yumi
 ```
 
 When working on your own packages, you may wish to make your own repository and change the following line in the `Dockerfile` to clone from your repository.
@@ -143,6 +143,15 @@ Note the USB number (e.g. /dev/ttyUSB0) as this is the name you need to pass in 
 
 Now run the container, giving it access to the USB port:
 ```bash
+sudo docker run -it \
+    --name yumi \
+    --device=/dev/ttyUSB0 \
+    my-image-name
+```
+
+If you did not remove the previous container and don't wish to restart it with `start` but create a new one with `run`, then run:
+```bash
+sudo docker rm -f yumi
 sudo docker run -it \
     --name yumi \
     --device=/dev/ttyUSB0 \
