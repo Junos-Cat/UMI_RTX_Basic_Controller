@@ -10,9 +10,9 @@ trap cleanup SIGINT
 #export ROS_LOG_DIR=$current_dir/.ros/log
 #mkdir -p $ROS_LOG_DIR
 
-export HOME=$current_dir
-export ROS_LOG_DIR=$HOME/.ros/log
-mkdir -p $ROS_LOG_DIR
+#export HOME=$current_dir
+#export ROS_LOG_DIR=$HOME/.ros/log
+#mkdir -p $ROS_LOG_DIR
 
 
 # Function to handle cleanup on Ctrl+C
@@ -31,10 +31,10 @@ cleanup() {
 cd "$current_dir"
 
 ### sourcing ROS files
-source /opt/ros/foxy/setup.bash
-source /opt/ros/iron/setup.bash
-source ros_control_ws/install/setup.bash
-source ROS_ws/install/setup.bash
+#source /opt/ros/foxy/setup.bash
+#source /opt/ros/iron/setup.bash
+#source ros_control_ws/install/setup.bash
+#source ROS_ws/install/setup.bash
 
 ### Launch the daemon
 # Finds the USB port used for the arm, assumed that only one port is used
