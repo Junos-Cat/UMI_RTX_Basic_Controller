@@ -59,3 +59,5 @@ RUN echo 'export PYTHONPATH=$PYTHONPATH:/opt/ros/foxy/lib/python3.8/site-package
 
 WORKDIR /home/Stage/UMI_RTX_Basic_Controller
 RUN apt install nano -y
+
+RUN git pull origin main
