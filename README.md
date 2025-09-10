@@ -133,15 +133,15 @@ sudo docker exec -it <container_name> /bin/bash
 
 When it comes to images, as mentioned you can list images with:
 ```bash
-docker images
+sudo docker images
 ```
 You can delete a specifice image with:
 ```bash
-docker rmi <image_id>
+sudo docker rmi <image_id>
 ```
 and delete all images with:
 ```bash
-docker rmi $(docker images -q)
+sudo docker rmi $(docker images -q)
 ```
 You may need to remove any containers built with these images.
 
