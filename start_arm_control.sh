@@ -4,7 +4,7 @@ current_dir=$(pwd)
 
 #sudo -i << EOF
 
-trap cleanup SIGINT
+trap clean SIGINT
 
 # Setup ROS log dir
 #export ROS_LOG_DIR=$current_dir/.ros/log
@@ -15,8 +15,8 @@ trap cleanup SIGINT
 #mkdir -p $ROS_LOG_DIR
 
 
-# Function to handle cleanup on Ctrl+C
-cleanup() {
+# Function to handle clean on Ctrl+C
+clean() {
   echo "Stopping all ROS nodes..."
   # Kill background processes
   pkill -P $$
@@ -100,7 +100,7 @@ else
           ;;
         *)
           echo "Invalid choice"
-          cleanup
+          clean
           ;;
       esac
       
@@ -136,8 +136,8 @@ else
           ;;
       esac
 
-      # After control node exits, cleanup
-      cleanup
+      # After control node exits, clean
+      clean
 
     else
       echo "umi-rtx/ports/rtx-socket file not found"
