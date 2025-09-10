@@ -47,7 +47,7 @@ void Arm_node::timer_callback(){
         roll = target_roll;
         grip = target_grip;
 
-	    //printf("setting motors\n");
+	printf("setting motors\n");
         set_motors();
         arm_go(NUMERIC,0x1555);
     }
