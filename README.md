@@ -111,7 +111,7 @@ and a list of all running and stopped containers by running:
 sudo docker ps -a
 ```
 
-#### Notes on containers/useful commands
+#### Notes on containers and images/useful commands
 When containers are stopped (by entering `exit` in the container terminal), any changes made in the container persist unless you remove the container by running:
 ```bash
 sudo docker rm yumi
@@ -130,6 +130,20 @@ or
 ```bash
 sudo docker exec -it <container_name> /bin/bash
 ```
+
+When it comes to images, as mentioned you can list images with:
+```bash
+docker images
+```
+You can delete a specifice image with:
+```bash
+docker rmi <image_id>
+```
+and delete all images with:
+```bash
+docker rmi $(docker images -q)
+```
+You may need to remove any containers built with these images.
 
 ## Running the UMI RTX Robotic Arm
 
